@@ -1,0 +1,21 @@
+site_name: cloud.gov.au
+site_description: "Docuementation for users of cloud.gov.au"
+theme: flatly
+markdown_extensions:
+  - toc:
+      permalink: True
+pages:
+  - Home: index.md
+  - Usage:
+      - 'Requesting Access': 'usage/requesting_access.md'
+      - 'Setup': 'usage/setup.md'
+      - CF-CLI:
+        - 'Intro': usage/cfcli/index.md
+        - 'Install': usage/cfcli/install.md
+        - 'Login': usage/cfcli/login.md
+        - 'Application Deployment': usage/cfcli/application_deployment.md
+        - 'Application Deletion': usage/cfcli/application_delete.md
+        - 'Log Access': usage/cfcli/log_access.md
+      - 'Your First Deploy': 'usage/your_first_deploy.md'
+  - Support:
+    - 'Asking for help': 'support/ask_for_help.md'
