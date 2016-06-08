@@ -15,12 +15,7 @@ test:
     - mkdocs build
 
 deployment:
-  production:
+  alpha:
     branch: /.*/
     commands:
-      - if [[ -n ${CF_BASIC_AUTH_PASSWORD+x} ]]; then htpasswd -cb _site/Staticfile.auth $CF_BASIC_AUTH_USERNAME $CF_BASIC_AUTH_PASSWORD; else echo "Not setting a password"; fi
-      - cf api $CF_API
-      - cf auth $CF_USER $CF_PASSWORD
-      - cf target -o $CF_ORG
-      - cf target -s $CF_SPACE
-      - cf push cgadocs-$CIRCLE_BRANCH
+      - ./bin/cideploy.sh
