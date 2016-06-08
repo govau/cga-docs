@@ -2,7 +2,7 @@
 
 _Before requesting access to cloud.gov.au each team member should create an account on github, if they have not already._
 
-If you would like to make use of cloud.gov.au to develop your transformation's Alpha then please send an email to `weboperations_alphasetup@digital.gov.au` using the following template:
+If you would like to make use of cloud.gov.au to develop your transformation's Alpha then please send an email to `weboperations+alphasetup@digital.gov.au` using the following template:
 <br />
 <br />
 <br />
