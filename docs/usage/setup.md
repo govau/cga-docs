@@ -22,7 +22,9 @@ The DTO has produced a rubygem, `jalpha`, for scaffolding out an opinionated Jek
 * `bin/setup`
 * `git init`
 * `git remote add ....`
-* `git push`
+* `git add -a`
+* `git commit -am 'initial commit'`
+* `git push -u origin master`
 * go to circleci in the browser and authorize with Github.
 * follow your new github repo
 * add some environment variables via the circleci UI
