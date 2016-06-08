@@ -1,5 +1,5 @@
 site_name: cloud.gov.au
-site_description: "Docuementation for users of cloud.gov.au"
+site_description: "Documentation for users of cloud.gov.au"
 theme: flatly
 markdown_extensions:
   - toc:
