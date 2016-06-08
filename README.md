@@ -1,6 +1,6 @@
 # cloud.gov.au docs
 
-This repository contains the site code for docs.cloud.gov.au, the DTO Cloud Foundry documentation.
+This repository contains the site code for docs.cloud.gov.au, the cloud.gov.au documentation.
 
 _Disclaimer: this documentation is MVP and currently aimed at digital transformations in Alpha_
 
