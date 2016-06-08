@@ -11,7 +11,7 @@ _Disclaimer: this documentation is MVP and currently aimed at digital transforma
 * Test locally
 * Submit PR
 
-Using mkdocs and circleci we are able to have continuous deployment of the documentation.
+Using mkdocs and circleci we are able to have continuous deployment of the documentation.  
 mkdocs uses [python markdown](http://pythonhosted.org/Markdown/) to build the pages.
 
 # Running the site locally
