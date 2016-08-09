@@ -29,10 +29,13 @@ The DTO has produced a rubygem, `jalpha`, for scaffolding out an opinionated Jek
 * follow your new github repo
 * add some environment variables via the circleci UI
 ```
-cf_basic_auth_username = "alphauser" [optional]
-cf_basic_auth_password = "" [optional]
-cf_staging_api = "https://api.system.staging.digital.gov.au"
-cf_staging_user = "circleci-$projectname"
-cf_staging_password = ""
-cf_staging_org = ""
+CF_API
+CF_ORG
+CF_PASSWORD
+CF_SPACE
+CF_USER
+CF_BASIC_AUTH_USERNAME  [optional]
+CF_BASIC_AUTH_PASSWORD  [optional]
 ```
+
+
