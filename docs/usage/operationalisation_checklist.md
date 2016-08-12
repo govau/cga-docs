@@ -15,7 +15,7 @@ Other questions should be revisited as part of the regular assessment of your pr
 **DSS Criteria:** 4
 
 Your application or service will most likely have a web presence.
-You will need to choose a URL at which it will be hosted.
+You will need to choose a URL at which your application will be hosted.
 Choosing a URL is an important decision that touches many departments, and, because of the way HTTP cookies work, has security implications.
 
 You should choose a URL early in the life of your project as the arrangements to host your application at a particular URL has the longest lead time.
@@ -24,14 +24,12 @@ You should choose a URL early in the life of your project as the arrangements to
 **Assessment criteria:** onboarding
 **DSS Criteria:** 4
 
-In 20NN a moratorium on the creation of new `.gov.au` subdomains was declared.
+A [moratorium on the creation of new `.gov.au` subdomains](https://www.dto.gov.au/standard/moratorium/) is currently in effect.
 Under certain circumstances exceptions can be made, but this process has a long lead time.
 
 Due to the way SSL certificates work, each new domain name carries with it a cost to purchase and maintain an SSL certificate for the life of your project.
 
 As with the choice of URL, you should decide on your domain name early in your project timeline.
-
-TODO(dfc) correct date of moratorium and link to moratorium document.
 
 # Is your application built in Ruby, Python, Node, Java, or Go?
 **Assessment criteria:** onboarding
@@ -258,11 +256,11 @@ What is the uptime requirement for your application?
 
 If you application is experiencing a failure, who will be notified and how?
 
-# How will you continue to provide your service during an outage.
+# How will you continue to provide your service during an outage?
 **Assessment criteria:** onboarding and continued
 **DSS Criteria:** 10
 
-Depending on the length of your outage, you may have to revert to an alternative or manual process.
+Depending on the length of your outage, unplanned or otherwise, you may have to revert to an alternative or manual process.
 How will that work?
 
 # How will you communicate availability status to your users?
