@@ -258,6 +258,13 @@ What is the uptime requirement for your application?
 
 If you application is experiencing a failure, who will be notified and how?
 
+# How will you continue to provide your service during an outage.
+**Assessment criteria:** onboarding and continued
+**DSS Criteria:** 10
+
+Depending on the length of your outage, you may have to revert to an alternative or manual process.
+How will that work?
+
 # How will you communicate availability status to your users?
 **Assessment criteria:** onboarding and continued
 **DSS Criteria:** 3, 4
