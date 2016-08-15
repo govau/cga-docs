@@ -5,7 +5,7 @@ Last Updated: 12 August 2016
 
 cloud.gov.au is a best of breed hosting platform for applications written to the [Digital Service Standard](https://www.dto.gov.au/standard/).
 
-This list represent a distillation of questions and issues encountered by transition teams as building applications on cloud.gov.au.
+This list represent a distillation of questions and issues encountered by service delivery teams as building applications on cloud.gov.au.
 
 Some of these questions, like which URL or domain name your application will be hosted at, should be resolved early in the inception of your transformation project.
 Other questions should be revisited as part of the regular assessment of your project.
@@ -24,7 +24,7 @@ You should choose a URL early in the life of your project as the arrangements to
 **Assessment criteria:** onboarding
 **DSS Criteria:** 4
 
-A [moratorium on the creation of new `.gov.au` subdomains](https://www.dto.gov.au/standard/moratorium/) is currently in effect.
+A [moratorium on the creation of new `.gov.au` domains](https://www.dto.gov.au/standard/moratorium/) is currently in effect.
 Under certain circumstances exceptions can be made, but this process has a long lead time.
 
 Due to the way SSL certificates work, each new domain name carries with it a cost to purchase and maintain an SSL certificate for the life of your project.
@@ -94,7 +94,7 @@ You should consider how you will build automated tests for all parts of your app
 Sending email from a government application is complicated.
 For example, some types of email correspondence, like account creation or password reset notifications, represent a potential security risk as the contents of email are not considered private.
 
-What address or addresses do you plan to be the _sender_ of an email from your application.
+What address or addresses do you plan to be the _sender_ of an email from your application?
 All email has a sender, and recipients of the email from your system will attempt to reply to it.
 You should consider how you will handle ad-hoc replies to automated messages.
 
@@ -111,7 +111,7 @@ If so, how much, and how long does it need to be stored?
 **Assessment criteria:** onboarding and continued
 **DSS Criteria:** 4
 
-Will you application need to run recurrent or batch jobs?
+Will your application need to run recurrent or batch jobs?
 These might be one off tasks to perform a database migration, or periodic tasks.
 
 If yes, how will you monitor these tasks' status?
@@ -120,7 +120,7 @@ If yes, how will you monitor these tasks' status?
 **Assessment criteria:** onboarding and continued
 **DSS Criteria:** 4, 9, 10
 
-During a transition project it is common to do a beta release to a limited number of beta users.
+When building a digital service it is common to do a beta release to a limited number of beta users.
 
 - Who will have access to your application during your private beta?
 - How will you grant them access?
@@ -132,7 +132,7 @@ During a transition project it is common to do a beta release to a limited numbe
 **Assessment criteria:** onboarding and continued
 **DSS Criteria:** 4, 9, 10
 
-During a transition project it is common to move from a private beta phase to a limited public beta.
+When building a digital service it is common to move from a private beta phase to a limited public beta.
 
 - If you plan to restrict access to your application during your public beta, who should have access to your application?
 - How will you grant them access?
@@ -206,7 +206,7 @@ If those external systems require credentials or other security tokens for authe
 **Assessment criteria:** onboarding and continued
 **DSS Criteria:** 4
 
-cloud.gov.au, supports the following databases:
+cloud.gov.au supports the following databases:
 
 - MySQL
 - PostgresSQL
@@ -219,7 +219,7 @@ If you are planning to use a database that is not on this list you should discus
 **Assessment criteria:** onboarding and continued
 **DSS Criteria:** 4
 
-cloud.gov.au, supports the following message queues:
+cloud.gov.au supports the following message queues:
 
 - RabbitMQ
 
@@ -231,7 +231,7 @@ If you are planning to use a message queue that is not on this list you should d
 **Assessment criteria:** onboarding and continued
 **DSS Criteria:** 4
 
-cloud.gov.au, supports the following caching products:
+cloud.gov.au supports the following caching products:
 
 - memcache
 - Redis
