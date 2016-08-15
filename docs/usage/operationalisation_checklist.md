@@ -256,8 +256,8 @@ What is the uptime requirement for your application?
 
 Applications should be written to degrade gracefully under load or when a failure occurs.
 
-- What failure conditions can you application handle without intervention?
-- What failure conditions can you application handle by temporarily disabling a feature or function? 
+- What failure conditions can your application handle without intervention?
+- What failure conditions can your application handle by temporarily disabling a feature or function? 
 - What failure conditions in your application will require someone to be notified to fix it?
 
 # How will you continue to provide your service during an outage?
