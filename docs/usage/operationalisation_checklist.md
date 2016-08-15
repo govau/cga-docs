@@ -1,7 +1,7 @@
-# cloud.gov.au operationalisation checklist.
+# cloud.gov.au ope/ationalisation checklist.
 
 Status: _DRAFT_
-Last Updated: 12 August 2016
+Last Updated: 15 August 2016
 
 cloud.gov.au is a best of breed hosting platform for applications written to the [Digital Service Standard](https://www.dto.gov.au/standard/).
 
@@ -252,9 +252,13 @@ If your application allows users to upload files, where do you plan to store thi
 
 What is the uptime requirement for your application?
 
-## What failure conditions do you wake people up for?
+## What failure conditions in your application are considered an outage?
 
-If you application is experiencing a failure, who will be notified and how?
+Applications should be written to degrade gracefully under load or when a failure occurs.
+
+- What failure conditions can you application handle without intervention?
+- What failure conditions can you application handle by temporarily disabling a feature or function? 
+- What failure conditions in your application will require someone to be notified to fix it?
 
 # How will you continue to provide your service during an outage?
 **Assessment criteria:** onboarding and continued
