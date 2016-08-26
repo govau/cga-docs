@@ -20,6 +20,7 @@ pages:
       - 'Operationalisation Checklist': 'usage/operationalisation_checklist.md'
   - Support:
     - 'Asking for help': 'support/ask_for_help.md'
+    - 'Incident response': 'support/incident_response.md'
     - 'Incident reports':
       - 'Intro': 'support/incident_reports/index.md'
       - '2016-08-12': 'support/incident_reports/2016-08-12.md'
