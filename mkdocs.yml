@@ -17,7 +17,7 @@ pages:
         - 'Application Deletion': usage/cfcli/application_delete.md
         - 'Log Access': usage/cfcli/log_access.md
       - 'Your First Deploy': 'usage/your_first_deploy.md'
-      - 'Operationalisation Checklist': 'usage/operationalisation_checklist.md'
+      - 'Getting your app ready for launch': 'usage/orca.md'
   - Support:
     - 'Asking for help': 'support/ask_for_help.md'
     - 'Incident response': 'support/incident_response.md'

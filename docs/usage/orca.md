@@ -1,7 +1,7 @@
-# cloud.gov.au operationalisation checklist.
+# ORCA - Operations Readiness Checklist of Amazement
 
-Status: _DRAFT_
-Last Updated: 15 August 2016
+Status: _DRAFT_    
+Last Updated: 30 August 2016
 
 cloud.gov.au is a best of breed hosting platform for applications written to the [Digital Service Standard](https://www.dto.gov.au/standard/).
 
@@ -44,7 +44,7 @@ Cloud Foundry, the hosting technology that underpins cloud.gov.au, supports the 
 - Go
 
 If you are planning to write your application in a language that is not on this list you should discuss this with the cloud.gov.au team by sending a support request to support@cloud.gov.au.
-Please understand that the choice of languages is limited because each supported language represents a significant investment of resources to maintain, support, and patch bugs and security issues. 
+Please understand that the choice of languages is limited because each supported language represents a significant investment of resources to maintain, support, and patch bugs and security issues.
 Adding a new supported language is not something taken lightly by the cloud.gov.au team as this represents an ongoing commitment for the life of all projects delivered in that language.
 
 Depending on your answer to this question, the following questions may be appropriate:
@@ -148,7 +148,7 @@ Authentication is a critical element of the security of your application.
 
 ## Do you plan to implement multi factor authentication?
 
-Multi factor authentication, sometimes called two factor authentication, is an additional security measure above traditional usernames and passwords by combining something you know (username, password), with something you have (usually a one time code) 
+Multi factor authentication, sometimes called two factor authentication, is an additional security measure above traditional usernames and passwords by combining something you know (username, password), with something you have (usually a one time code)
 
 Depending on the security requirements of your application you may need to consider implementing multi factor authentication for some or all of the actions that require authorisation.
 
@@ -259,7 +259,7 @@ What is the uptime requirement for your application?
 Applications should be written to degrade gracefully under load or when a failure occurs.
 
 - What failure conditions can your application handle without intervention?
-- What failure conditions can your application handle by temporarily disabling a feature or function? 
+- What failure conditions can your application handle by temporarily disabling a feature or function?
 - What failure conditions in your application will require someone to be notified to fix it?
 
 ## How will you continue to provide your service during an outage?
