@@ -10,6 +10,10 @@ We publish status and availability for the platform and applications on [status.
 
 During incidents, we commit to delivering status updates every 15 minutes.
 
+## Triage and escalation process for apps on cloud.gov.au
+
+![Triage and escalation process flowchart](/usage/triage_and_escalation_process.png)
+
 ## I have a service on cloud.gov.au.
 
 You're launching a service on cloud.gov.au, and you want to know where the responsibilities are.
