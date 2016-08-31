@@ -7,7 +7,7 @@ Last Updated: 30 August 2016
 
 cloud.gov.au is a best of breed hosting platform for applications written to the [Digital Service Standard](https://www.dto.gov.au/standard/).
 
-This list represent a distillation of questions and issues encountered by service delivery teams as building applications on cloud.gov.au.
+This list represents a distillation of questions and issues encountered by service delivery teams as building applications on cloud.gov.au.
 
 Some of these questions, like which URL or domain name your application will be hosted at, should be resolved early in the inception of your transformation project.
 Other questions should be revisited as part of the regular assessment of your project.
