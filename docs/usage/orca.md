@@ -1,5 +1,7 @@
 # ORCA - Operations Readiness Checklist of Amazement
 
+![whale whale whale, what have we got here?](http://i.imgur.com/Brl42KH.jpg)
+
 Status: _DRAFT_    
 Last Updated: 30 August 2016
 
