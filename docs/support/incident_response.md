@@ -12,7 +12,7 @@ During incidents, we commit to delivering status updates every 15 minutes.
 
 ## Triage and escalation process for apps on cloud.gov.au
 
-![Triage and escalation process flowchart](/usage/triage_and_escalation_process.png)
+![Triage and escalation process flowchart](/support/triage_and_escalation_process.png)
 
 ## I have a service on cloud.gov.au.
 
