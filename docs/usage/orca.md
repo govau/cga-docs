@@ -3,7 +3,7 @@
 ![whale whale whale, what have we got here?](http://i.imgur.com/Brl42KH.jpg)
 
 Status: _DRAFT_    
-Last Updated: 30 August 2016
+Last Updated: 5 September 2016
 
 cloud.gov.au is a best of breed hosting platform for applications written to the [Digital Service Standard](https://www.dto.gov.au/standard/).
 
