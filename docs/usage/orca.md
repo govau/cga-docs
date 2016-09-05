@@ -3,7 +3,7 @@
 ![whale whale whale, what have we got here?](http://i.imgur.com/Brl42KH.jpg)
 
 Status: _DRAFT_    
-Last Updated: 30 August 2016
+Last Updated: 5 September 2016
 
 cloud.gov.au is a best of breed hosting platform for applications written to the [Digital Service Standard](https://www.dto.gov.au/standard/).
 
@@ -11,6 +11,11 @@ This list represents a distillation of questions and issues encountered by servi
 
 Some of these questions, like which URL or domain name your application will be hosted at, should be resolved early in the inception of your transformation project.
 Other questions should be revisited as part of the regular assessment of your project.
+
+## Moratorium
+A [Moratorium](https://www.dto.gov.au/standard/moratorium/) on service investment is in place to limit the fragmentation of the user experience of Australian Government services. However, investments are automatically exempt if the service delivery team can demonstrate they are applying the Digital Service Standard.
+
+Consult with your agency's Digital Transformation Coordinator or the Digital Transformation Office for further information.
 
 ## What is the URL your application will be served from?
 **Assessment criteria:** onboarding
@@ -20,18 +25,23 @@ Your application or service will most likely have a web presence.
 You will need to choose a URL at which your application will be hosted.
 Choosing a URL is an important decision that touches many departments, and, because of the way HTTP cookies work, has security implications.
 
-You should choose a URL early in the life of your project as the arrangements to host your application at a particular URL has the longest lead time.
+You should seek advice on, and choose, a URL early in the life of your project to allow for lead times for arrangements to be made to host your application.
 
 ## What domain names do you need registered to host your application?
 **Assessment criteria:** onboarding
 **DSS Criteria:** 4
 
-A [moratorium on the creation of new `.gov.au` domains](https://www.dto.gov.au/standard/moratorium/) is currently in effect.
-Under certain circumstances exceptions can be made, but this process has a long lead time.
+To use a dedicated domain, consult with your agency CIO / IT Manager / Web Manager to determine if this an appropropriate solution and to arrange for an application for a new domain to be submitted. Note that applications should be accompanied by a stated purpose outlining why a new domain, separate from an existing agency/topic domain, is required to support the initiative, and demonstrating compliance with the [gov.au Eligibility and Allocation Policy](http://www.domainname.gov.au/domain-policies/eligibility-and-allocation-policy/). 
 
 Due to the way SSL certificates work, each new domain name carries with it a cost to purchase and maintain an SSL certificate for the life of your project.
 
 As with the choice of URL, you should decide on your domain name early in your project timeline.
+
+Please contact the [Domain Provider for your jurisdiction](http://www.domainname.gov.au/contact-us/) if you need any further information.
+
+### Subdomain options
+
+To use a subdomain of an existing agency/topic domain, consult with the [Registrant contact](http://whois.ausregistry.net.au/whois/whois_local.jsp?) of the intended domain to determine if this an appropropriate solution and to arrange its creation in the DNS zone file.  
 
 ## Is your application built in Ruby, Python, Node, Java, or Go?
 **Assessment criteria:** onboarding
