@@ -21,20 +21,22 @@ You're launching a service on cloud.gov.au, and you want to know where the respo
 ### What am I responsible for?
 
 * The availability of my service.
-* The availability of the apps that make up my service
-* Making changes to your service.
-* Security and classification of your data.
-* Sending emails.
+* The availability of the apps that make up my service.
+* Making changes to my service.
+* Security and classification of the data stored by my service.
+* Sending emails for my service.
+  * For example, emails for user sign ups, password resets, notifications, etc. 
 
 ### What am I _not_ responsible for?
 
 * The availability and uptime of the hosting that my service depends on.
 * The availability and uptime of the hosting that the apps that make up my service depends on.
+  * For example, if you cannot diagnose the interruption to your service within the applications that make up your service, contact cloud.gov.au
 
 ### What is the cloud.gov.au team responsible for?
 
 * Providing a platform to run services on.
-* Providing tools to make changes to those services faster, standard, and safer
+* Providing tools to make changes to those services faster, standard, and safer.
 * Ensuring the availability and uptime of the platform, so applications can successfully serve traffic.
 * Any backing services provided by the platform that applications depend on (like databases, caching, etc).
 * Domain name management, load balancing, and redirection, for any apps or services running on the platform.
@@ -56,6 +58,7 @@ Things are going to break. We're here to help you get back on your feet.
 ### What should I _not_ escalate to the cloud.gov.au team?
 
 * Failures in your application that are caused by configuration error, or code change.
+  * For example, if you apply an update to your service, and the service or a webpage becomes unavailable, you should investigate the root cause in your application layer before asking the cloud.gov.au team. 
 
 ### How do we triage incidents that are a mix of service, app, and cloud.gov.au problems?
 
@@ -68,7 +71,7 @@ Things are going to break. We're here to help you get back on your feet.
 * This will post a notification in #cloud-gov-au on Slack.
 * This will alert primary on-call for cloud.gov.au, who will triage the incident.
 
-### How do we run incidents?
+### How do we run incident management?
 
 * Join the #incidents channel on Slack.
 * We will appoint an Incident Response Commander to run the incident.
