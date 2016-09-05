@@ -30,6 +30,7 @@ You're launching a service on cloud.gov.au, and you want to know where the respo
 
 * The availability and uptime of the hosting that my service depends on.
 * The availability and uptime of the hosting that the apps that make up my service depends on.
+  * For example, if you cannot diagnose the interruption to your service within the applications that make up your service, contact cloud.gov.au
 
 ### What is the cloud.gov.au team responsible for?
 
@@ -56,6 +57,7 @@ Things are going to break. We're here to help you get back on your feet.
 ### What should I _not_ escalate to the cloud.gov.au team?
 
 * Failures in your application that are caused by configuration error, or code change.
+  * For example, if you apply an update to your service, and the service or a webpage becomes unavailable, you should investigate the root cause in your application layer before asking the cloud.gov.au team. 
 
 ### How do we triage incidents that are a mix of service, app, and cloud.gov.au problems?
 
