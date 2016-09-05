@@ -21,10 +21,11 @@ You're launching a service on cloud.gov.au, and you want to know where the respo
 ### What am I responsible for?
 
 * The availability of my service.
-* The availability of the apps that make up my service
-* Making changes to your service.
-* Security and classification of your data.
-* Sending emails.
+* The availability of the apps that make up my service.
+* Making changes to my service.
+* Security and classification of the data stored by my service.
+* Sending emails for my service.
+  * For example, emails for user sign ups, password resets, notifications, etc. 
 
 ### What am I _not_ responsible for?
 
@@ -35,7 +36,7 @@ You're launching a service on cloud.gov.au, and you want to know where the respo
 ### What is the cloud.gov.au team responsible for?
 
 * Providing a platform to run services on.
-* Providing tools to make changes to those services faster, standard, and safer
+* Providing tools to make changes to those services faster, standard, and safer.
 * Ensuring the availability and uptime of the platform, so applications can successfully serve traffic.
 * Any backing services provided by the platform that applications depend on (like databases, caching, etc).
 * Domain name management, load balancing, and redirection, for any apps or services running on the platform.
@@ -70,7 +71,7 @@ Things are going to break. We're here to help you get back on your feet.
 * This will post a notification in #cloud-gov-au on Slack.
 * This will alert primary on-call for cloud.gov.au, who will triage the incident.
 
-### How do we run incidents?
+### How do we run incident management?
 
 * Join the #incidents channel on Slack.
 * We will appoint an Incident Response Commander to run the incident.
