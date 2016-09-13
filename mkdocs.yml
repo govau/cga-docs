@@ -19,7 +19,6 @@ pages:
       - 'Your First Deploy': 'usage/your_first_deploy.md'
       - 'Getting your app ready for launch': 'usage/orca.md'
   - Support:
-    - 'Asking for help': 'support/ask_for_help.md'
     - 'Incident response': 'support/incident_response.md'
     - 'Incident reports':
       - 'Intro': 'support/incident_reports/index.md'
