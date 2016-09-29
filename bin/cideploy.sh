@@ -24,19 +24,17 @@ main() {
 
   case "${GITBRANCH}" in
     master)
-      appname="cgadocs"
+      basicauth
+      cf api $CF_API
+      cf auth $CF_USER $CF_PASSWORD
+      cf target -o $CF_ORG
+      cf target -s $CF_SPACE
+      cf push $appname
       ;;
     *)
-      appname="cgadocs-${GITBRANCH}"
+      exit 0
       ;;
   esac
-
-  basicauth
-  cf api $CF_API
-  cf auth $CF_USER $CF_PASSWORD
-  cf target -o $CF_ORG
-  cf target -s $CF_SPACE
-  cf push $appname
 }
 
 main $@
