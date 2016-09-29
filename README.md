@@ -19,6 +19,6 @@ mkdocs uses [python markdown](http://pythonhosted.org/Markdown/) to build the pa
 The following assumes you have python installed locally.
 
 * `pip install mkdocs`
+* Install dependencies with `pip install -r requirements.txt`
 * `mkdocs serve`
 * browse to http://localhost:4000
-
