@@ -9,6 +9,7 @@ pages:
   - Usage:
       - 'Requesting Access': 'usage/requesting_access.md'
       - 'Setup': 'usage/setup.md'
+      - 'Sending Emails': 'usage/sending_emails.md'
       - CF-CLI:
         - 'Intro': usage/cfcli/index.md
         - 'Install': usage/cfcli/install.md
