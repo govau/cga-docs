@@ -1,7 +1,14 @@
 ---
 
 path: site/
-instances: 2
 memory: 64M
-disk_quota: 256M
+disk_quota: 64M
+instances: 1
 buildpack: staticfile_buildpack
+no-hostname: true
+domains:
+- docs.cloud.gov.au
+
+applications:
+- name: cgadocs-blue
+- name: cgadocs-green
