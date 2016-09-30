@@ -1,6 +1,8 @@
 site_name: cloud.gov.au
 site_description: "Documentation for users of cloud.gov.au"
 theme: gov-au-theme
+extra:
+  search: true
 markdown_extensions:
   - toc:
 pages:
