@@ -1,9 +1,14 @@
 site_name: cloud.gov.au
 site_description: "Documentation for users of cloud.gov.au"
-theme: flatly
+theme: gov-au-theme
+extra:
+  search: true
+  footer_links:
+    - 'title': 'Status'
+      'url': 'http://status.cloud.gov.au/'
+      'external': 'true'
 markdown_extensions:
   - toc:
-      permalink: True
 pages:
   - Home: index.md
   - Usage:

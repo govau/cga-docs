@@ -9,6 +9,7 @@ machine:
 dependencies:
   override:
     - pip install mkdocs
+    - pip install mkdocs-gov-au-theme 
 
 test:
   override:
