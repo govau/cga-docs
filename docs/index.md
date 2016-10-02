@@ -1,6 +1,6 @@
 # The platform for building the future.
 
-cloud.gov.au is a place to run web apps, freeing up teams to focus on writing code that meets user needs. It provides a faster, safer, standard way to change web apps without impacting the user. It also provides real-time visibility and insight into web app usage, performance, and behaviour.
+cloud.gov.au is a place to run web applications, freeing up teams to focus on writing code that meets user needs. It provides a faster, safer, standard way to change web apps without impacting the user. It also provides real-time visibility and insight into web application usage, performance, and behaviour.
 
 Combined, **this makes it easy for government to release, monitor and grow user-facing digital services.**
 
@@ -15,6 +15,8 @@ To help teams release changes faster and more safely, all changes to production 
 > Fact: High-performing IT organizations deploy 30x more frequently, with 200x shorter lead times; they have 60x fewer failures and recover 168x faster.
 >
 > – [2015 State of DevOps report](https://puppet.com/resources/white-paper/2015-state-devops-report)
+
+For terminology that is used within the platform-as-a-service at the heart of cloud.gov.au, start with [Cloud Foundry’s glossary](http://docs.cloudfoundry.org/concepts/glossary.html).
 
 # Secure and scalable
 
