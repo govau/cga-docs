@@ -1,6 +1,7 @@
 site_name: cloud.gov.au
 site_description: "Documentation for users of cloud.gov.au"
 theme: gov-au-theme
+google_analytics: ['UA-61222473-5', 'auto']
 extra:
   search: true
   footer_links:
