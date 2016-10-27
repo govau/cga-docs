@@ -1,4 +1,6 @@
 machine:
+  node:
+    version: 6.8.1
   python:
     version: 2.7.11
   post:
@@ -7,13 +9,18 @@ machine:
     - cf -v
 
 dependencies:
+  pre:
+  - make install
+  cache_directories:
+    - "node_modules"
   override:
     - pip install mkdocs
-    - pip install mkdocs-gov-au-theme 
+    - pip install mkdocs-gov-au-theme
 
 test:
   override:
     - mkdocs build
+    - make test
 
 deployment:
   alpha:
