@@ -21,7 +21,7 @@ test:
   override:
     - mkdocs build
     - mkdocs serve
-        background: true
+      background: true
     - sleep 5
     - make pa11y-test
 
