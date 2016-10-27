@@ -1,5 +1,5 @@
 
-HOST = localhost:4000
+HOST = localhost:8000
 NPM_BIN = ./node_modules/.bin
 export PATH := $(NPM_BIN):$(PATH)
 
@@ -7,6 +7,7 @@ export PATH := $(NPM_BIN):$(PATH)
 pa11y-install:
 	@echo "Installing pa11y"
 	@npm install pa11y-ci@^0.2
+	@npm install phantomjs
 
 # Run pa11y against the site
 pa11y-test:
