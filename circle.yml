@@ -10,7 +10,7 @@ machine:
 
 dependencies:
   pre:
-  - make install
+  - make pa11y-install
   cache_directories:
     - "node_modules"
   override:
@@ -20,7 +20,7 @@ dependencies:
 test:
   override:
     - mkdocs build
-    - make test
+    - make pa11y-test
 
 deployment:
   alpha:
