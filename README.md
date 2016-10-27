@@ -22,3 +22,17 @@ The following assumes you have python installed locally.
 * Install dependencies with `pip install -r requirements.txt`
 * `mkdocs serve`
 * browse to http://localhost:4000
+
+## Run accessibility tests using pa11y
+
+Install dependencies with:
+
+`make pa11y-install`
+
+Make sure you have the app running locally with:
+
+`mkdocs serve`
+
+Run the test with:
+
+`make pa11y-test`
