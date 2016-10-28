@@ -8,7 +8,7 @@ There is a fair amount of options available to the `cf push` command. To see the
 
 Let's push our demo application now to the platform.
 
-``` bash
+``` language-html
 [~/src/github.com/AusDTO/pcf_demo_app]
 lunix@boran]  (master) -> cf push mydemoapp -b staticfile_buildpack -n mydemoapp -i 1 -m 64M -k 256M
 ...
@@ -23,7 +23,7 @@ There is a bit going on here. Lets run throught what the options are:
 **-k** :sets the maximum DISK usage for our application (e.g. 256M, 1024M, 1G)  
 
 Lets see this in action.
-``` bash
+``` language-html
 [~/src/github.com/AusDTO/pcf_demo_app]
 lunix@boran]  (master) -> cf push mydemoapp -b staticfile_buildpack -n mydemoapp -i 1 -m 64M -k 256M
 Creating app mydemoapp in org dto / space dtoweb as example.person@digital.gov.au...
