@@ -9,13 +9,12 @@ machine:
     - cf -v
 
 dependencies:
-  pre:
-  - make pa11y-install
-  cache_directories:
-    - "node_modules"
   override:
     - pip install mkdocs
     - pip install -r requirements.txt
+    - make pa11y-install
+    cache_directories:
+      - "node_modules"
 
 test:
   override:
