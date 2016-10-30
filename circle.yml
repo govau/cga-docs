@@ -13,7 +13,7 @@ dependencies:
     - pip install mkdocs
     - pip install -r requirements.txt
     - make pa11y-install
-    cache_directories:
+  cache_directories:
       - "node_modules"
 
 test:
