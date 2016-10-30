@@ -25,9 +25,13 @@ The following assumes you have python installed locally.
 
 ## Run accessibility tests using pa11y
 
-Install dependencies with:
+Install pa11y and it's dependencies with:
 
 `make pa11y-install`
+
+Make sure you are running the latest dependencies for the app with:
+
+`pip install -r requirements.txt`
 
 Make sure you have the app running locally with:
 
