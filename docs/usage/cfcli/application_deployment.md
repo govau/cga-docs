@@ -1,4 +1,4 @@
-# Application Deployment
+## Application Deployment
 
 To get a list of existing apps depoloyed in the curent space run `cf apps`.
 

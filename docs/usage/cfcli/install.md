@@ -16,4 +16,3 @@ You will need to have installed the Cloud Foundry CLI tools before continuing.
 [l32r]: https://cli.run.pivotal.io/stable?release=redhat32&version=6.21.1&source=pcf1.6
 [l64r]: https://cli.run.pivotal.io/stable?release=redhat64&version=6.21.1&source=pcf1.6
 [osx64]: https://cli.run.pivotal.io/stable?release=macosx64&version=6.21.1&source=pcf1.6
-

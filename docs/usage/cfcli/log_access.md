@@ -1,4 +1,4 @@
-# Log Access
+## Log Access
 
 We are able to access our application’s log output by using the cf logs command like this:
 `cf logs mydemoapp`
