@@ -6,6 +6,6 @@ This article is intended for developers new to the DTO Platform, herin called 'T
 
 This tutorial assumes that you have already been sent your account details for The Platform and you have a copy of the demo application cloned locally.
 
-``` language-html
+``` language-none
 git clone git@github.com:AusDTO/pcf_demo_app.git
 ```

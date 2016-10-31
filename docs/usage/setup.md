@@ -29,7 +29,7 @@ The DTO has produced a rubygem, `jalpha`, for scaffolding out an opinionated Jek
 * follow your new github repo
 * add some environment variables via the circleci UI
 
-``` language-html
+``` language-none
 CF_API
 CF_ORG
 CF_PASSWORD

@@ -8,7 +8,7 @@ This will tail the application logs, from all Application Instances, straight to
 You can test it by opening up your browser and accessing [http://mydemoapp.apps.staging.digital.gov.au](http://mydemoapp.apps.staging.digital.gov.au).
 This will produce the following output:
 
-``` language-html
+``` language-none
 [~/src/github.com/AusDTO/demo-app]
 lunix@boran]  (master) -> cf logs mydemoapp
 Connected, tailing logs for app mydemoapp in org dto / space dtoweb as example.person@digital.gov.au...
@@ -31,7 +31,7 @@ lunix@boran]  (master) ->
 
 To see logs from the past:
 
-``` language-html
+``` language-none
 [~/src/github.com/AusDTO/demo-app]
 lunix@boran]  (master) -> cf logs --recent mydemoapp
 Connected, dumping recent logs for app mydemoapp in org dto / space dtoweb as example.person@digital.gov.au...

@@ -2,7 +2,7 @@
 
 To get a list of existing apps deployed in the curent space run `cf apps`.
 
-``` language-html
+``` language-none
 [~/src/github.com/AusDTO/demo-app]
 lunix@boran]  (master) -> cf apps
 Getting apps in org dto / space dtoweb as example.person@digital.gov.au...
@@ -19,7 +19,7 @@ lunix@boran]  (master) ->
 To delete an application from the platform is `cf delete <appname>`  
 You should be very careful here - _measure twice - cut once !_
 
-``` language-html
+``` language-none
 [~/src/github.com/AusDTO/demo-app]
 lunix@boran]  (master) -> cf delete mydemoapp
 

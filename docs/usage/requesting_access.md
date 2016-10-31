@@ -4,7 +4,7 @@ _Before requesting access to cloud.gov.au each team member should create an acco
 
 If you would like to make use of cloud.gov.au to develop your transformation's Alpha then please send an email to `support@cloud.gov.au` using the following template:
 
-``` language-html
+``` language-none
 G`Day cloud.gov.au team !
 
 We are excited to be starting the Alpha of our digital transformation this week.
