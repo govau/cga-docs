@@ -1,9 +1,9 @@
-# Setting your project up
+## Setting your project up
 
 Congratulations, you should now have your cloud.gov.au accounts all setup.  
 All you need now is to scaffold out a codebase, activate circleci and push the code to github.
 
-## Requirements
+### Requirements
 
 * A workstation (preferred Linux or OSX)
 * git
@@ -14,7 +14,7 @@ All you need now is to scaffold out a codebase, activate circleci and push the c
 
 The DTO has produced a rubygem, `jalpha`, for scaffolding out an opinionated Jekyll stack for your Alpha.
 
-## Actions
+### Actions
 
 * `gem install jalpha`
 * `jalpha new <projectname>`

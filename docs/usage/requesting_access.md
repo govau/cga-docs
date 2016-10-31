@@ -1,4 +1,4 @@
-# Requesting Access to cloud.gov.au
+## Requesting Access to cloud.gov.au
 
 _Before requesting access to cloud.gov.au each team member should create an account on github, if they have not already._
 

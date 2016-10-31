@@ -1,4 +1,4 @@
-# Platform Login
+## Platform Login
 
 Before working with The Platform you need to instruct the cf cli what platform API endpoint, organisation & space to work with and what your credentials are. If you only belong to one ORG and/or space then these will be auto-selected for you.
 
