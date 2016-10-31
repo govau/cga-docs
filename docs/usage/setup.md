@@ -28,7 +28,8 @@ The DTO has produced a rubygem, `jalpha`, for scaffolding out an opinionated Jek
 * go to circleci in the browser and authorize with Github.
 * follow your new github repo
 * add some environment variables via the circleci UI
-```
+
+``` language-none
 CF_API
 CF_ORG
 CF_PASSWORD
@@ -37,5 +38,3 @@ CF_USER
 CF_BASIC_AUTH_USERNAME  [optional]
 CF_BASIC_AUTH_PASSWORD  [optional]
 ```
-
-

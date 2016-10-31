@@ -2,7 +2,7 @@
 
 Before working with The Platform you need to instruct the cf cli what platform API endpoint, organisation & space to work with and what your credentials are. If you only belong to one ORG and/or space then these will be auto-selected for you.
 
-``` bash
+``` language-none
 [~/src/github.com/AusDTO/ops/sekrets]
 lunix@boran]  (master) -> cf login -a https://api.system.staging.digital.gov.au --skip-ssl-validation
 API endpoint: https://api.system.staging.digital.gov.au
