@@ -6,13 +6,26 @@ _Disclaimer: this documentation is MVP and currently aimed at digital transforma
 
 ## Contributing
 
-* Create a branch
-* Add an entry to mkdocs.yml and then create a markdown file with the content.
-* Test locally
-* Submit PR
+We're so glad you're thinking about contributing to docs.cloud.gov.au. If you're unsure about anything, just ask -- or submit the issue or pull request anyway. The worst that can happen is you'll be politely asked to change something. We love all friendly contributions. You can read our [contributing guide](https://github.com/AusDTO/cga_docs/blob/master/contributing.md) for more detailed information.
 
-Using mkdocs and circleci we are able to have continuous deployment of the documentation.  
-mkdocs uses [python markdown](http://pythonhosted.org/Markdown/) to build the pages.
+### Ways to contribute
+
+1. Send a pull request with your proposed changes
+2. [Raise an issue](https://github.com/AusDTO/cga_docs/issues)
+
+### Proposing content updates with github.com
+
+We want the cloud.gov.au documentation to be the best it can be. We've open-sourced our docs and we welcome any pull requests if you would like to contribute.
+
+1. Navigate to the file within [`/docs`](https://github.com/AusDTO/cga_docs/tree/master/docs) that you'd like to edit. Our documents are organised into folders that represent the sections and subsection of cloud.gov.au)
+2. Click the pencil icon in the top right corner to edit the file
+3. Make your proposed changes
+4. Click "Propose file change"
+5. Click "Create pull request"
+6. Add a descriptive title and detailed description for your proposed change. The more information the better.
+7. Click "Create pull request"
+
+That's it! You'll be automatically subscribed to receive updates as others review your proposed change and provide feedback.
 
 # Running the site locally
 
