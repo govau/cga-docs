@@ -23,12 +23,18 @@ That's it! You'll be automatically subscribed to receive updates as others revie
 
 ## How to write content for docs.cloud.gov.au
 
-All content pages for cloud.gov.au follow the simple format.
+### How to structure your markdown file
 
-1. **Page title**. This is automatically generated from the `pages:` array in mkdocs.yml
-2. **Table of Contents** These anchor links are automatically generated and list all the `<h2> ##` on the page.
-2. **Abstract(optional)**. This paragraph quickly summarises the content of the page. You add the abstract as the opening paragraph in your markdown file.
-3. **Page content**. The page should be segmented into meaningful sections with each section having a heading. Heading levels start at `<h2> ##` because the `<h1>` page title is automatically generated from the IA specified in `mkdocs.yml`.
+All markdown files for cloud.gov.au follow the simple format.
+
+1. **Abstract(optional)**. This paragraph quickly summarises the content of the page. You add the abstract as the opening paragraph in your markdown file.
+2. **Page content**. The page should be segmented into meaningful sections with each section having a heading. Heading levels start at `<h2> ##` because the `<h1>` page title is automatically generated from the IA specified in `mkdocs.yml`.
+
+You don't have to worry about adding the page title(<h1> #). The page title is generated from the `pages:` array in `mkdocs.yml`
+
+The table of contents with anchor links is generated automatically.
+
+### Writing content
 
 It's really important that we make sure our documentation is clear, concise and written in plain english where possible. Here are some tools we use to help us do this:
 
