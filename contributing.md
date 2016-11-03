@@ -26,8 +26,8 @@ few tips about how the project is setup.
 
 ### Updating the theme
 
-We have html, css and JS are packaged as part of a MKDocs UI Kit theme. If you would like to submit a
-Pull Request to update the theme you should contribute to the  [mkdocs-gov-au-theme](https://github.com/AusDTO/mkdocs-gov-au-theme) project.
+We have the html, css and JS for docs.cloud.gov.au packaged as a MKDocs theme.
+If you would like to submit a Pull Request to update the theme you should contribute to the  [mkdocs-gov-au-theme](https://github.com/AusDTO/mkdocs-gov-au-theme) project.
 
 ### Tests
 
