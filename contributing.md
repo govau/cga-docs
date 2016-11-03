@@ -15,7 +15,7 @@ All the content for cloud.gov.au can be found in the `docs` folder. The content 
 It's really important that we make sure our documentation is clear, concise and written in plain english where possible. Here are some tools we use to help us do this:
 
 - [Hemmingway editor](http://www.hemingwayapp.com/) - Simple app that checks your content for readability
-- [Digital Transformation Office content styleguide](http://content-style-guide.apps.staging.digital.gov.au/)
+- [Digital Transformation Agency content styleguide](http://content-style-guide.apps.staging.digital.gov.au/)
 
 Simply edit the relevant markdown file and send a pull request. If you are new to pull requests you can read our [pull request guide](#submitting-a-pull-request)
 
