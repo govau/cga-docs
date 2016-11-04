@@ -4,25 +4,47 @@ We're so glad you're thinking about contributing to docs.cloud.gov.au. If you're
 
 ## Ways to contribute
 
-We are happy for people to propose changes to our documentation through Pull Requests. Alternatively you can [raise an issue](https://github.com/AusDTO/cga_docs/issues) detailing the problem you had and someone from the cloud.gov.au team will work with you to solve the problem.
+1. Send a pull request with your proposed changes
+2. [Raise an issue](https://github.com/AusDTO/cga_docs/issues)
 
-## Proposing updates to the documentation
+## Proposing content updates with github.com
 
 We want the cloud.gov.au documentation to be the best it can be. We've open-sourced our docs and we welcome any pull requests if you would like to contribute.
 
-All the content for cloud.gov.au can be found in the `docs` folder. The content is written in [Markdown](https://daringfireball.net/projects/markdown/syntax). and organised into folders that replicate the Information Architecture structure of the site.
+1. Navigate to the file within [`/docs`](https://github.com/AusDTO/cga_docs/tree/master/docs) that you'd like to edit. Our documents are organised into folders that represent the sections and subsection of cloud.gov.au)
+2. Click the pencil icon in the top right corner to edit the file
+3. Make your proposed changes
+4. Click "Propose file change"
+5. Click "Create pull request"
+6. Add a descriptive title and detailed description for your proposed change. The more information the better.
+7. Click "Create pull request"
+
+That's it! You'll be automatically subscribed to receive updates as others review your proposed change and provide feedback.
+
+## How to write content for docs.cloud.gov.au
+
+### How to structure your markdown file
+
+All markdown files for cloud.gov.au follow the simple format.
+
+1. **Abstract(optional)**. This paragraph quickly summarises the content of the page. You add the abstract as the opening paragraph in your markdown file.
+2. **Page content**. The page should be segmented into meaningful sections with each section having a heading. Heading levels start at `<h2> ##` because the `<h1>` page title is automatically generated from the IA specified in `mkdocs.yml`.
+
+You don't have to worry about adding the page title(<h1> #). The page title is generated from the `pages:` array in `mkdocs.yml`
+
+The table of contents with anchor links is generated automatically.
+
+### Writing content
 
 It's really important that we make sure our documentation is clear, concise and written in plain english where possible. Here are some tools we use to help us do this:
 
 - [Hemmingway editor](http://www.hemingwayapp.com/) - Simple app that checks your content for readability
 - [Digital Transformation Agency content styleguide](http://content-style-guide.apps.staging.digital.gov.au/)
+- [Markdown guide](https://daringfireball.net/projects/markdown/syntax) - cloud.gov.au documentation is written in Markdown
 
-Simply edit the relevant markdown file and send a pull request. If you are new to pull requests you can read our [pull request guide](#submitting-a-pull-request)
+## Proposing updates with Git command line
 
-## Code contributions
-
-We welcome any pull requests to fix issues and add features to docs.cloud.gov.au. Here are a
-few tips about how the project is setup.
+If you are a developer you may be more comfortable contributing through the command line rather than github.com. We welcome any pull requests to fix issues and add features to docs.cloud.gov.au. Here are a few tips about how the project is setup.
 
 ### Updating the theme
 
@@ -34,16 +56,13 @@ If you would like to submit a Pull Request to update the theme you should contri
 We automatically run all tests on any Pull Requests we receive but it is still a good idea to run tests
 before sending us your PR.
 
-We currently have accessibility tests using [pa11y](http://pa11y.org/). To run these tests you will first need to install
-the dependencies by running:
+We currently have accessibility tests using [pa11y](http://pa11y.org/). To run these tests locally you will first need to install the dependencies by running:
 
 `make pa11y-install`
 
 Then run the test by using:
 
 `make pa11y-test`
-
-## Submitting a pull request
 
 ### Pull request tips
 
@@ -54,21 +73,6 @@ Then run the test by using:
 * Pull request are easy and fun. If this is your first pull request, it may help to [understand GitHub Flow](https://guides.github.com/introduction/flow/).
 
 * If you're submitting a code contribution, be sure to read the [code contributions](#code-contributions) section below.
-
-### Submitting a pull request via github.com
-
-Many small changes can be made entirely through the github.com web interface. **This is a great option if you
-aren't a technical person.**
-
-1. Navigate to the file within [`/docs`](https://github.com/AusDTO/cga_docs/tree/master/docs) that you'd like to edit.
-2. Click the pencil icon in the top right corner to edit the file
-3. Make your proposed changes
-4. Click "Propose file change"
-5. Click "Create pull request"
-6. Add a descriptive title and detailed description for your proposed change. The more information the better.
-7. Click "Create pull request"
-
-That's it! You'll be automatically subscribed to receive updates as others review your proposed change and provide feedback.
 
 ### Submitting a pull request via Git command line
 
