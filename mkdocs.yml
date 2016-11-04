@@ -14,7 +14,7 @@ markdown_extensions:
 pages:
   - Home: index.md
   - Usage:
-    - 'Starting a new project': 'usage/request_new_project.md'
+    - 'Start a new project': 'usage/start_new_project.md'
     - 'Setup': 'usage/setup.md'
     - 'Sending Emails': 'usage/sending_emails.md'
     - 'Your First Deploy': 'usage/your_first_deploy.md'

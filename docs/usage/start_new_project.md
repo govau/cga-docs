@@ -1,6 +1,6 @@
 The cloud.gov.au team can setup everything you need to start building and deploying your application.
 
-## Setting up a new project on cloud.gov.au
+## Setup a new project on cloud.gov.au
 
 To request the setup of a new project send a support request to [support@cloud.gov.au](mailto:support@cloud.gov.au) using the following template:
 
