@@ -26,7 +26,7 @@ The `<SPACE>` is the CloudFoundry space. This is usually the name of the applica
 For example:
 
 ```
-cf target -o adobe -s photoshop
+cf target -o digital-marketplace -s marketplace-frontend
 ```
 
 Now you can deploy and manage your application from the Command Line.
