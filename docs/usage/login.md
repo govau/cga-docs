@@ -1,0 +1,32 @@
+Before you can login you will need to:
+
+- [install CloudFoundry command line tools](/usage/setup/)
+- be a member of an existing project on cloud.gov.au
+
+If you are starting a new project then you will need to [Request a new project](/usage/start_new_project/)
+
+If you need access to an existing project then ask the projects CloudFoundry maintainer. This is usually the Delivery Manager or Tech Lead. If you get stuck you can [send us a support ticket](mailto:support@cloud.gov.au).
+
+Login with:
+
+```
+cf login -a https://api.system.staging.digital.gov.au --skip-ssl-validation
+```
+
+Target your project with:
+
+```
+cf target -o <ORG> -s <SPACE>
+```
+
+The `<ORG>` is the CloudFoundry organisation. This is usually the name of the project.
+
+The `<SPACE>` is the CloudFoundry space. This is usually the name of the application.
+
+For example:
+
+```
+cf target -o adobe -s photoshop
+```
+
+Now you can deploy and manage your application from the Command Line.
