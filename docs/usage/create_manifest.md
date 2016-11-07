@@ -1,4 +1,4 @@
-Application manifests tell `cf push` what to do with applications. This includes everything from how many instances to create and how much memory to allocate to what services applications should use.
+Application manifests tell `cf push` what to do with applications. This includes information such as disk size and which buildpack to use.
 
 Here is a basic manifest.yml example for a static site
 
