@@ -22,6 +22,7 @@ pages:
     - 'Getting your app ready for launch': 'usage/orca.md'
   - CF-CLI:
     - 'Intro': usage/cfcli/index.md
+    - 'Create manifest.yml': usage/create_manifest.md
     - 'Application Deployment': usage/cfcli/application_deployment.md
     - 'Application Deletion': usage/cfcli/application_delete.md
     - 'Log Access': usage/cfcli/log_access.md
