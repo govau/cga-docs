@@ -32,39 +32,6 @@ As a user, most of your interactions with Cloud Foundry will be through the comm
 </tbody>
 </table>
 
-<!--
-<dl>
-  <dt>Mac OSX</dt>
-  <dd><a href="https://cli.run.pivotal.io/stable?release=windows32&version=6.21.1&source=pcf1.6">6.21.1</a></dd>
-</dl>
-
-<dl>
-  <dt>Windows</dt>
-  <dd><a href="https://cli.run.pivotal.io/stable?release=windows32&version=6.21.1&source=pcf1.6">32 BIT - 6.21.1</a></dd>
-  <dd><a href="https://cli.run.pivotal.io/stable?release=windows64&version=6.21.1&source=pcf1.6">64 BIT - 6.21.1</a></dd>
-</dl>
-
-<dl>
-  <dt>Linux (deb)</dt>
-  <dd><a href="https://cli.run.pivotal.io/stable?release=debian32&version=6.21.1&source=pcf1.6">32 BIT - 6.21.1</a></dd>
-  <dd><a href="https://cli.run.pivotal.io/stable?release=debian64&version=6.21.1&source=pcf1.6">64 BIT - 6.21.1</a></dd>
-</dl>
-
-<dl>
-  <dt>Linux (rpm)</dt>
-  <dd><a href="https://cli.run.pivotal.io/stable?release=redhat32&version=6.21.1&source=pcf1.6">32 BIT - 6.21.1</a></dd>
-  <dd><a href="https://cli.run.pivotal.io/stable?release=redhat64&version=6.21.1&source=pcf1.6">64 BIT - 6.21.1</a></dd>
-</dl>
--->
-
-[w32]:https://cli.run.pivotal.io/stable?release=windows32&version=6.21.1&source=pcf1.6
-[w64]: https://cli.run.pivotal.io/stable?release=windows64&version=6.21.1&source=pcf1.6
-[l32d]: https://cli.run.pivotal.io/stable?release=debian32&version=6.21.1&source=pcf1.6
-[l64d]: https://cli.run.pivotal.io/stable?release=debian64&version=6.21.1&source=pcf1.6
-[l32r]: https://cli.run.pivotal.io/stable?release=redhat32&version=6.21.1&source=pcf1.6
-[l64r]: https://cli.run.pivotal.io/stable?release=redhat64&version=6.21.1&source=pcf1.6
-[osx64]: https://cli.run.pivotal.io/stable?release=macosx64&version=6.21.1&source=pcf1.6
-
 Confirm the installation was successful by running:
 
 ```
