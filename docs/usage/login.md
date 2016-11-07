@@ -10,18 +10,26 @@ If you need access to an existing project then ask the projects CloudFoundry mai
 Login with:
 
 ```
-cf login -a https://api.system.staging.digital.gov.au --skip-ssl-validation
+cf login -a https://api.system.staging.digital.gov.au
 ```
 
-Target your project with:
+You will then need to enter your email address, password and select from a list of available Orgs and Spaces.
+
+You can also define your login options all at once with:
 
 ```
-cf target -o <ORG> -s <SPACE>
+cf login -a https://api.system.staging.digital.gov.au -u <email> -o <org> -s <space>
 ```
 
-The `<ORG>` is the CloudFoundry organisation. This is usually the name of the project.
+Once logged in, to target a different project use:
 
-The `<SPACE>` is the CloudFoundry space. This is usually the name of the application.
+```
+cf target -o <org> -s <space>
+```
+
+The `<org>` is the CloudFoundry organisation. This is usually the name of the project.
+
+The `<space>` is the CloudFoundry space. This is usually the name of the application.
 
 For example:
 
