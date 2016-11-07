@@ -12,4 +12,4 @@ disk_quota: 256M
 buildpack: staticfile_buildpack
 ```
 
-You can read more information [how to deploy with application manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html).
+Read more about [how to deploy with application manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html).

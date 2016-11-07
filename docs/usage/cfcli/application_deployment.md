@@ -2,9 +2,9 @@ The command to create a new app and to push a new version of an existing one are
 
 Cloud Foundry isn’t version-control-aware. `cf push` will deploy the working state of whatever files you have in your current directory.
 
-Before deploying your application you should [setup a manifest.yml](#). The manifest.yml file tells `cf push` what to do. This includes everything from how many instances to create to how much memory or disk space to assign.
+Before deploying your application you should [setup a manifest.yml](/usage/create_manifest/). The manifest.yml file tells `cf push` what to do. This includes everything from how many instances to create to how much memory or disk space to assign.
 
-Another option is to define these configurations as options on `cf push`. Not defining configuration options at all may slow down your deployments.
+Another option is to define these configurations as options to `cf push`. Not defining configuration options at all may slow down your deployments or provide too many or too few resources for your application.
 
 The basic steps to deploy your application are:
 
