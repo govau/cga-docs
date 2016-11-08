@@ -11,6 +11,7 @@ extra:
       'external': 'true'
 markdown_extensions:
   - toc:
+repo_url: https://github.com/AusDTO/cga_docs
 pages:
   - Home: index.md
   - Usage:
