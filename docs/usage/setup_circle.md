@@ -1,35 +1,71 @@
-CircleCI is the tool we currently use for automating the testing and deployment of applications on cloud.gov.au. It will only work for source code hosted on GitHub or Bitbucket.
+CircleCI is the tool we use for Continuous Integration, Continuous Delivery and Continuous Deployment.
 
-CircleCI will watch your projects source code and when changes are detected it will automatically run tests and deploy your application to cloud.gov.au. This is part of continuous delivery, continuous deployment and continuous integration.
+CircleCI automates the testing and deployment of your application. It runs whenever you change your application source code. You can configure configure how CircleCI works with the `circle.yml` file.
 
-## Add circle.yml file
+If you choose to use CircleCI for your project you will need to host your source code on GitHub or Bitbucket.
 
-We configure the projects CircleCI configuration using circle.yml file.
+## Configure circle.yml
 
-We recommend you setup your circle.yml file like this:
+You will need to add a circle.yml file to your applications root directory.
+
+Here is the basic structure of a circle.yml file.
 
 ```
+---
 machine:
+  ruby:
+    version: 2.3.1
+
+dependencies:
+  override:
+    - bin/ciprepare.sh
+
+test:
+  override:
+    - bin/citest.sh
+
+deployment:
+  all:
+    branch: /.*/
+    commands:
+      - bin/cideploy.sh
 ```
 
-Run through what each section is for:
+The `circle.yml` file has four phases:
 
-- machine: adjusting the Virtual Machine to your preferences and requirements
-- checkout: checking out and cloning your git repo
-- dependencies: setting up your project’s language-specific dependencies
-- database: preparing the databases for your tests
-- test: running your tests
-- deployment: deploying your code to your web servers
+- `machine:` specify what language the virtual machine needs to run your application. You can specify more than one.
+- `dependencies:` install any dependencies for your application
+- `test:` run your application tests
+- `deployment:` deploy your code to cloud.gov.au
 
-Example files to get you started:
+**CircleCI will not deploy your application if any of the above phases fail.**
 
- - link 1
- - link 2
+Read the [Circle documentation on configuring your circle.yml file](https://circleci.com/docs/configuration/)
 
-Deploy by tag
-Deploy only certain branches
-Deploy all branches
-How environment variables work
-Abstract setup and deploy files
+## Write CircleCI command scripts
 
-## Add an integration to slack
+We recommend you write commands for each CircleCI phase in separate shell scripts. This is helpful if your team chooses to use another CI/CD tool in the future. If you prefer you can write commands in the `circle.yml` file.
+
+You can see an [example of how we setup scripts](https://github.com/AusDTO/jalpha/tree/master/template/bin) for a simple Jekyll project.
+
+## Add environment variables to CircleCI
+
+CircleCI may need access to sensitive data to run tests and deploy your application. Examples of sensitive data are:
+
+- CloudFoundry username and password
+- API keys
+- Login details for your application
+
+Add sensitive data to CircleCI as environment variables. Do not save sensitive data in the source code.
+
+To create an environment variable in CircleCI:
+
+- [Login to the CircleCI dashboard](https://circleci.com/vcs-authorize/)
+- Navigate to "Project settings"
+- Select "Environment variables" in the "Build settings" section
+- Select "Add variable"
+- Give your new variable a `name` and add the `value` as the sensitive data
+
+You can now call the sensitive data in your circle.yml or shell scripts as `$name`
+
+Read the [Circle documentation on environment variables](https://circleci.com/docs/environment-variables/)
