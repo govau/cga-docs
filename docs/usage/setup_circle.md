@@ -4,9 +4,9 @@ CircleCI automates the testing and deployment of your application. It runs whene
 
 If you choose to use CircleCI for your project you will need to host your source code on GitHub or Bitbucket.
 
-## Configure circle.yml
+## Configure `circle.yml`
 
-You will need to add a circle.yml file to your applications root directory.
+You will need to add a circle.yml file to the root directory of your application.
 
 Here is the basic structure of a circle.yml file.
 
@@ -46,6 +46,8 @@ Read the [Circle documentation on configuring your circle.yml file](https://circ
 
 We recommend you write commands for each CircleCI phase in separate shell scripts. This is helpful if your team chooses to use another CI/CD tool in the future. If you prefer you can write commands in the `circle.yml` file.
 
+**Warning: If you are using environment variables is a shell script do not use `set -x`. This will log your environment variable values to CircleCI logs. Instead use `set -v`.**
+
 You can see an [example of how we setup scripts](https://github.com/AusDTO/jalpha/tree/master/template/bin) for a simple Jekyll project.
 
 ## Add environment variables to CircleCI
@@ -67,5 +69,7 @@ To create an environment variable in CircleCI:
 - Give your new variable a `name` and add the `value` as the sensitive data
 
 You can now call the sensitive data in your circle.yml or shell scripts as `$name`
+
+**Warning: If you are using environment variables is a shell script do not use `set -x`. This will log your environment variable values to CircleCI logs. Instead use `set -v`.**
 
 Read the [Circle documentation on environment variables](https://circleci.com/docs/environment-variables/)
