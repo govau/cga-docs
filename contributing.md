@@ -4,8 +4,8 @@ We're so glad you're thinking about contributing to docs.cloud.gov.au. If you're
 
 ## Ways to contribute
 
-Option A) Send a pull request with your proposed changes
-Option B) [Raise an issue](https://github.com/AusDTO/cga_docs/issues)
+- Option A) Send a pull request with your proposed changes
+- Option B) [Raise an issue](https://github.com/AusDTO/cga_docs/issues)
 
 ## Proposing content updates with github.com (Option A)
 
