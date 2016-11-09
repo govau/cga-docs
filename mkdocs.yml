@@ -21,6 +21,7 @@ pages:
     - 'Your First Deploy': 'usage/your_first_deploy.md'
     - 'Getting your app ready for launch': 'usage/orca.md'
     - 'Setup CircleCI': 'usage/setup_circle.md'
+    - 'Setup Continuous deployment': 'usage/ci_cd.md'
   - CF-CLI:
     - 'Intro': usage/cfcli/index.md
     - 'Create manifest.yml': usage/create_manifest.md
