@@ -31,6 +31,7 @@ pages:
   - Advanced:
     - 'Zero downtime deploys': usage/advanced/zero_downtime_deploys.md
   - Support:
+    - 'Get help with cloud.gov.au': 'usage/lodge_support_ticket.md'
     - 'Incident response': 'support/incident_response.md'
   - 'Incident reports':
     - 'Intro': 'support/incident_reports/index.md'
