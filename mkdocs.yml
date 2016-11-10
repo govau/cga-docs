@@ -30,6 +30,7 @@ pages:
     - 'Log Access': usage/cfcli/log_access.md
   - Advanced:
     - 'Zero downtime deploys': usage/advanced/zero_downtime_deploys.md
+    - 'Deploying feature branches': usage/advanced/deploying_feature_branches.md
   - Support:
     - 'Incident response': 'support/incident_response.md'
   - 'Incident reports':
