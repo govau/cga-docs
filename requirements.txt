@@ -1,1 +1,1 @@
-mkdocs-gov-au-theme==0.0.5
+mkdocs-gov-au-theme==0.0.7
