@@ -30,6 +30,7 @@ pages:
     - 'Log Access': usage/cfcli/log_access.md
   - Advanced:
     - 'Zero downtime deploys': usage/advanced/zero_downtime_deploys.md
+    - 'Deploying feature branches': usage/advanced/deploying_feature_branches.md
   - Support:
     - 'Get help with cloud.gov.au': 'usage/lodge_support_ticket.md'
     - 'Incident response': 'support/incident_response.md'
