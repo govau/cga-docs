@@ -30,6 +30,7 @@ pages:
     - 'Application Deletion': usage/cfcli/application_delete.md
     - 'Log Access': usage/cfcli/log_access.md
   - Support:
+    - 'Get help with cloud.gov.au': 'usage/lodge_support_ticket.md'
     - 'Incident response': 'support/incident_response.md'
   - 'Incident reports':
     - 'Intro': 'support/incident_reports/index.md'
