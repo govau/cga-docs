@@ -1,14 +1,10 @@
 Many teams use feature branches to develop new features for their application.
-This allows changes to be tested and reviewed before they are merged into the product.
-Sometimes it is useful to have a deployed version of a feature branch for testing.
-There are a few different ways of doing this.
+Feature branches allow teams to test and review changes before deploying. It is useful to have a deployed version of a feature branch for reviewers to view. There are a few different ways of doing this.
 
 ## QA Fire
 
 QA Fire is a project developed by the DTA to automatically deploy feature branches.
-QA Fire deploys a new copy of the application when a pull request is opened on GitHub.
-When new commits are pushed to the branch, the deploy is updated.
-When the pull request is closed, the deploy is deleted.
+It deploys a unique staging version of the application for every new pull request on GitHub. Pushing new commits to the pull request will update the deployed feature branch. Closing the pull request will delete the deployed feature branch.
 
 QA Fire is still at the beginning of its development and it does not work for all projects.
 Check out the [QA Fire GitHub page](https://github.com/ausdto/qa-fire) for information on what
