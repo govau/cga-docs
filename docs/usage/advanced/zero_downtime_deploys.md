@@ -15,7 +15,7 @@ applications:
 
 This file will:
 
-1. Create a `host` at app-name.digital.gov.au. This is where you can view your application
+1. Create a `host` at app-name.apps.staging.digital.gov.au. This is where you can view your application
 2. Create two applications: `app-name-blue` and `app-name-green`
 
 Users will route to either app-name-green or app-name-blue when they visit `host`
