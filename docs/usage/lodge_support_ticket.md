@@ -12,5 +12,7 @@ Before you lodge a support ticket be sure to check our documentation. You can al
 
 ### Feedback on documentation
 
+Our documentation is open source. We love all friendly contributions. You can read our [contributing guide](https://github.com/AusDTO/cga_docs/blob/master/contributing.md) for more detailed information.
+
 - [Raise a GitHub issue](https://github.com/AusDTO/cga_docs/issues)
 - You can propose edits to our documentation. Click the 'Edit this page on GitHub' at the bottom of any page.
