@@ -1,9 +1,3 @@
-## Sending emails from your application
-
-![Email Symbol](/usage/email_symbol.svg "Email Symbol")
-
-### Introduction
-
 cloud.gov.au have a resilient, highly available (outbound only) smtp service available.  
 This service allows applications deployed to cloud.gov.au to send outbound emails.  
 There is no capability to receive emails.

@@ -44,4 +44,4 @@ We create a new GitHub team on the AusDTO GitHub organisation. We populate this 
 When we set up a new CloudFoundry project we use the project name as the CloudFoundry Space name. We create user accounts and grant access to the space using the emails you supplied. We collect the users mobile number so we can send them their new CloudFoundry login password.
 
 <br />
-<a class="see-more" href="/usage/setup/">Next step: Install command line tools</a>
+<a class="see-more" href="/getting_started/install_cli/">Next step: Install command line tools</a>

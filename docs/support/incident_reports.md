@@ -10,6 +10,6 @@ We do this because we believe there is valuable information to be learnt from fa
 
 The reports produced from these Post Incident Reviews are published below:
 
-- [August 12, 2016](2016-08-12)
-- [June 05, 2016](2016-06-05)
-- [February 11, 2016](2016-02-11)
+- [August 12, 2016](incident_reports/2016-08-12)
+- [June 05, 2016](incident_reports/2016-06-05)
+- [February 11, 2016](incident_reports/2016-02-11)

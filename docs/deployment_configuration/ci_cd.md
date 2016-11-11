@@ -17,7 +17,7 @@ Currently we use CircleCI as our continuous integration service.
 
 Follow these steps to setup your application to do continuous deployment on cloud.gov.au
 
-1. [Create a manifest.yml](/usage/create_manifest/)
-2. [Setup CircleCI](/usage/setup_circle/)
+1. [Create a manifest.yml](/deployment_configuration/create_manifest/)
+2. [Setup CircleCI](/deployment_configuration/setup_circle/)
 
 Also consider using zero downtime deploys for you application. cloud.gov.au can do this using Blue/Green deploys.

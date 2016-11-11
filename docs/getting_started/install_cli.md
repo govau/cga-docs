@@ -38,4 +38,4 @@ Confirm the installation was successful by running:
 cf -v
 ```
 <br />
-<a class="see-more" href="/usage/login/">Next step: Login and target your project</a>
+<a class="see-more" href="/getting_started/login/">Next step: Login and target your project</a>

@@ -39,7 +39,7 @@ cf push $NAME-$CIRCLE_PROJECT_REPONAME
 
 You can also manually deploy your branches when you need them. This is the
 best option if you don't need to deploy every branch. See
-[Application Deployment](../cfcli/application_deployment.md) for more information.
+[Application Deployment](/deployment_configuration/application_deployment.md) for more information.
 
 ## Managing environment variables
 
