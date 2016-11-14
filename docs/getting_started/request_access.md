@@ -1,4 +1,4 @@
-The cloud.gov.au team creates new user accounts for cloud.gov.au. Currently cloud.gov.au is only available to Digital Transformation Agency(DTA) staff and teams working with the DTA.
+The cloud.gov.au team creates new user accounts for cloud.gov.au. Currently cloud.gov.au is only available to DTA staff and teams working with the DTA.
 
 You should only request access to cloud.gov.au if you need to join an existing project. If you are starting a new project follow our guide to [setup a new project](/getting_started/new_project/).
 
