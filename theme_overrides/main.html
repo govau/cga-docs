@@ -1,6 +1,9 @@
 
 {% extends "base.html" %}
 
-{% block page_footer %}
-  {{ super() }}
-{% endblock page_footer %}
+{% block article_footer_content %}
+<h2>Help improve this page</h2>
+<p>This page, as well as the rest of our docs, are open-source and available on GitHub.<p>
+<p>We welcome your contributions to make these docs better.</p>
+<p><a href="{{ repo_url }}/issues/new?title=RE%3A%20{{ page.title }}" rel="external">Open an issue about this page</a></p>
+{% endblock  %}
