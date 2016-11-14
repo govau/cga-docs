@@ -31,10 +31,12 @@ pages:
     - 'Create manifest.yml': 'deployment_configuration/create_manifest.md'
     - 'Zero downtime deploys': 'deployment_configuration/zero_downtime_deploys.md'
     - 'Deploying feature branches': 'deployment_configuration/deploying_feature_branches.md'
+    - 'User management': 'deployment_configuration/user_management.md'
   - Services:
     - 'Sending Emails': 'services/sending_emails.md'
     - 'Log access': 'services/log_access.md'
   - Support:
+    - 'Get help using cloud.gov.au': 'support/help.md'
     - 'Incident response': 'support/incident_response.md'
     - 'Incident reports': 'support/incident_reports.md'
     - '_2016-08-12': 'support/incident_reports/2016-08-12.md'
