@@ -19,6 +19,7 @@ markdown_extensions:
 pages:
   - Home: index.md
   - Getting started:
+    - 'Request access': 'getting_started/request_access.md'
     - 'Setup a new project': 'getting_started/new_project.md'
     - 'Install command line tools': 'getting_started/install_cli.md'
     - 'Login': 'getting_started/login.md'
