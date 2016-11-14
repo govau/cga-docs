@@ -6,6 +6,9 @@ theme: gov-au-theme
 theme_dir: 'theme_overrides'
 google_analytics: ['UA-61222473-5', 'auto']
 extra:
+  feedback_link:
+    - 'title': 'Lodge support ticket'
+      'url': 'mailto:support@cloud.gov.au'
   search: true
   footer_links:
     - 'title': 'Status'
