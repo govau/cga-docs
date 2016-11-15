@@ -30,6 +30,7 @@ pages:
     - 'Setup Continuous deployment': 'deployment_configuration/ci_cd.md'
     - 'Setup CircleCI': 'deployment_configuration/setup_circle.md'
     - 'Create manifest.yml': 'deployment_configuration/create_manifest.md'
+    - 'Environment variables': 'deployment_configuration/environment.md'
     - 'Zero downtime deploys': 'deployment_configuration/zero_downtime_deploys.md'
     - 'Deploying feature branches': 'deployment_configuration/deploying_feature_branches.md'
     - 'User management': 'deployment_configuration/user_management.md'
