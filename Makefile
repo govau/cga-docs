@@ -16,7 +16,7 @@ pa11y-test:
 # Install broken link checker dependencies
 broken-links-install:
 	@echo "Installing broken link checker"
-	@npm install broken-link-checker -g
+	@npm install https://github.com/stevenvachon/broken-link-checker
 
 # Run broken link checker against the site
 broken-links-test:
