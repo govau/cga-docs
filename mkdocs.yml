@@ -39,6 +39,7 @@ pages:
     - 'Log access': 'services/log_access.md'
   - Support:
     - 'Get help using cloud.gov.au': 'support/help.md'
+    - 'Reset password': 'support/reset_password.md'
     - 'Incident response': 'support/incident_response.md'
     - 'Incident reports': 'support/incident_reports.md'
     - '_2016-08-12': 'support/incident_reports/2016-08-12.md'
