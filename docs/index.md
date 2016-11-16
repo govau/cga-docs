@@ -28,4 +28,4 @@ The cloud.gov.au team follow [AWS best practices for DDoS resilency](https://d0.
 
 ## Start on cloud.gov.au today
 
-Check out [how to request access](/usage/requesting_access/).
+Check out [how to request access](/getting_started/request_access/).

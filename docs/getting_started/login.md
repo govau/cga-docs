@@ -3,7 +3,7 @@ Before you can login you will need to:
 - [install CloudFoundry command line tools](/getting_started/install_cli/)
 - be a member of an existing project on cloud.gov.au
 
-If you are starting a new project then you will need to [Request a new project](/getting_started/ew_project/)
+If you are starting a new project then you will need to [Request a new project](/getting_started/new_project/)
 
 If you need access to an existing project then ask the projects CloudFoundry maintainer. This is usually the Delivery Manager or Tech Lead. If you get stuck you can [send us a support ticket](mailto:support@cloud.gov.au).
 
