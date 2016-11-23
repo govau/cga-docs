@@ -17,8 +17,8 @@ extra:
 markdown_extensions:
   - toc:
 pages:
-  - Home: index.md
   - Getting started:
+    - 'Welcome': index.md
     - 'Join an existing project or start a new one': 'getting_started/request_access.md'
     - 'Install command line tools': 'getting_started/install_cli.md'
     - 'Login to CloudFoundry': 'getting_started/login.md'
