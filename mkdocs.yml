@@ -24,8 +24,8 @@ pages:
     - 'Login to CloudFoundry': 'getting_started/login.md'
     - 'Get an app ready for launch': 'getting_started/orca.md'
   - Deployment and configuration:
-    - 'Push application': 'deployment_configuration/application_deployment.md'
-    - 'Delete application': 'deployment_configuration/application_delete.md'
+    - 'Push an application': 'deployment_configuration/application_deployment.md'
+    - 'Delete an application': 'deployment_configuration/application_delete.md'
     - 'Setup Continuous deployment': 'deployment_configuration/ci_cd.md'
     - 'Setup CircleCI': 'deployment_configuration/setup_circle.md'
     - 'Create manifest.yml': 'deployment_configuration/create_manifest.md'
