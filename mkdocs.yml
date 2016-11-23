@@ -21,11 +21,11 @@ pages:
   - Getting started:
     - 'Join an existing project or start a new one': 'getting_started/request_access.md'
     - 'Install command line tools': 'getting_started/install_cli.md'
-    - 'Login': 'getting_started/login.md'
+    - 'Login to CloudFoundry': 'getting_started/login.md'
     - 'Get an app ready for launch': 'getting_started/orca.md'
   - Deployment and configuration:
-    - 'Application deployment': 'deployment_configuration/application_deployment.md'
-    - 'Application deletion': 'deployment_configuration/application_delete.md'
+    - 'Push application': 'deployment_configuration/application_deployment.md'
+    - 'Delete application': 'deployment_configuration/application_delete.md'
     - 'Setup Continuous deployment': 'deployment_configuration/ci_cd.md'
     - 'Setup CircleCI': 'deployment_configuration/setup_circle.md'
     - 'Create manifest.yml': 'deployment_configuration/create_manifest.md'
@@ -38,9 +38,9 @@ pages:
     - 'Log access': 'services/log_access.md'
   - Support:
     - 'Get help using cloud.gov.au': 'support/help.md'
-    - 'Reset password': 'support/reset_password.md'
+    - 'Reset CloudFoundry password': 'support/reset_password.md'
     - 'Incident response': 'support/incident_response.md'
-    - 'Incident reports': 'support/incident_reports.md'
+    - 'Post Incident Reports': 'support/incident_reports.md'
     - '_2016-08-12': 'support/incident_reports/2016-08-12.md'
     - '_2016-06-05': 'support/incident_reports/2016-06-05.md'
     - '_2016-02-11': 'support/incident_reports/2016-02-11.md'

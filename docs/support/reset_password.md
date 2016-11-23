@@ -1,4 +1,6 @@
-To change your CloudFoundry password you will need to know your current password. If you have forgotten your current password send a support ticket to [support@cloud.gov.au](mailto:support@cloud.gov.au).
+abstract: What to do if you’ve forgotten your password or need to change it.
+
+## How to change your password
 
 Change your password with:
 
@@ -23,3 +25,7 @@ Verify Password>*******
 Changing password...
 
 ```
+
+## What to do if you’ve forgotten your password
+
+Please send a support ticket to [support@cloud.gov.au](mailto:support@cloud.gov.au).
