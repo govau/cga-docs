@@ -8,7 +8,7 @@ abstract: How to get a cloud.gov.au account and join or create a project.
 
 Send an email to [support@cloud.gov.au](mailto:support@cloud.gov.au) using the following template:
 
-``` language-none
+```
 G`Day cloud.gov.au team
 
 Could you please create a cloud.gov.au account for me?
@@ -41,7 +41,7 @@ We will setup the Github and Cloud Foundry infrastructure you need to start depl
 
 To request the setup of a new project send a support request to [support@cloud.gov.au](mailto:support@cloud.gov.au) using the following template:
 
-``` language-none
+```
 G`Day cloud.gov.au team
 
 Could you please setup our team so that we may make use of cloud.gov.au?
