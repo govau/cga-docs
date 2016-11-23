@@ -1,3 +1,5 @@
+abstract: How to setup Continuos deployment for your application.
+
 CircleCI is the tool we use for Continuous Integration, Continuous Delivery and Continuous Deployment.
 
 CircleCI automates the testing and deployment of your application. It runs whenever you change your application source code. You can configure configure how CircleCI works with the `circle.yml` file.

@@ -1,3 +1,4 @@
+abstract: How to add, remove and change user permissions.
 hide_toc: true
 
 Before you can assign a role to a team member they must have a cloud.gov.au account. The cloud.gov.au team creates new user accounts. Lodge a support ticket requesting to add a new user to cloud.gov.au.

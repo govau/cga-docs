@@ -1,7 +1,15 @@
-Send your support requests to [support@cloud.gov.au](mailto:support@cloud.gov.au)
+abstract: There are 3 ways you can get help with cloud.gov.au.
 
-We use Zendesk to manage support tickets for cloud.gov.au. This service is available for anyone with a .gov.au email address.
+## Read our Documentation
 
-Before you lodge a support ticket be sure to check our documentation. You can also check the [status of cloud.gov.au](http://status.cloud.gov.au/) if you are experiencing an outage.
+You can find instructions and helpful information in the [Documentation section](/) of this website:
 
-If you are a member of the Digital Transformation Agency Slack you can always talk to us in #cloud-gov-au
+## Send us a support request
+
+If you can’t find the answer to your problem in our documentation please send a support request to [support@cloud.gov.au](mailto:support@cloud.gov.au)
+
+We use Zendesk to manage support tickets for cloud.gov.au. This service is available for anyone with a gov.au email address.
+
+## Contact us on Slack
+
+If you are a member of the Digital Transformation Agency’s Slack team, you can always join our #cloud-gov-au channel and ask us questions there.

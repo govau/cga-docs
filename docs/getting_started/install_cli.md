@@ -1,4 +1,4 @@
-As a user, most of your interactions with Cloud Foundry will be through the command line.
+abstract: As a user, most of your interactions with Cloud Foundry will be through the command line.
 
 <table class="content-table">
 <thead>
