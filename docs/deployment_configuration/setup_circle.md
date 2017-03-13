@@ -75,3 +75,15 @@ You can now call the sensitive data in your circle.yml or shell scripts as `$nam
 **Warning: If you are using environment variables is a shell script do not use `set -x`. This will log your environment variable values to CircleCI logs. Instead use `set -v`.**
 
 Read the [Circle documentation on environment variables](https://circleci.com/docs/environment-variables/)
+
+### Some commonly needed environment variables and how you can find them
+
+<table>
+  <tbody>
+	 <tr><th>CF_API</th><td>bash: `cf api`</td></tr>
+	 <tr><th>CF_ORG</th><td>bash: `cf orgs`</td></tr>
+	 <tr><th>CF_PASSWORD</th><td>The password you use to log into CloudFoundry</td></tr>
+	 <tr><th>CF_SPACE</th><td>bash: `cf spaces`</td></tr>
+	 <tr><th>CF_USER</th><td>bash: `cf target` and use the value on the 'User:' row.</td></tr>
+  </tbody>
+</table>
