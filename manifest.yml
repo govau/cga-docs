@@ -8,7 +8,8 @@ buildpack: staticfile_buildpack
 no-hostname: true
 domains:
 - docs.cloud.gov.au
-
+env:
+  FORCE_HTTPS: true
 applications:
 - name: cgadocs-blue
 - name: cgadocs-green
