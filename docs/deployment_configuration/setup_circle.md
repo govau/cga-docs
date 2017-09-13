@@ -1,4 +1,4 @@
-abstract: How to setup Continuos deployment for your application.
+abstract: How to setup Continuous Deployment for your application.
 
 CircleCI is the tool we use for Continuous Integration, Continuous Delivery and Continuous Deployment.
 
