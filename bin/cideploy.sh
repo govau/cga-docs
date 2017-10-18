@@ -25,11 +25,17 @@ main() {
   case "${GITBRANCH}" in
     master)
       basicauth
+      echo "Running cipush-oscf.sh in the background"
+      bin/cipush-oscf.sh &
+
       cf api $CF_API
       cf auth $CF_USER $CF_PASSWORD
       cf target -o $CF_ORG
       cf target -s $CF_SPACE
       cf push $appname
+
+      echo "Waiting"
+      wait
       ;;
     *)
       exit 0
