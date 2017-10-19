@@ -42,7 +42,7 @@ main() {
       # For performance we push to oscf in the background, and then
       # continue the normal deploy as normal
       echo "Pushing to oscf in the background"
-      push-oscf > push-oscf-out.log 2>push-oscf-err.log &
+      push-oscf > ${CIRCLE_ARTIFACTS}/push-oscf-out.log 2>${CIRCLE_ARTIFACTS}/push-oscf-err.log &
 
       cf api $CF_API
       cf auth $CF_USER $CF_PASSWORD
