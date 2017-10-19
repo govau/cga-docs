@@ -23,11 +23,13 @@ basicauth() {
 # Push the app to the new OSCF environment
 #
 push-oscf() {
-  cf api $OSCF_API
-  cf auth $OSCF_USER $OSCF_PASSWORD
-  cf target -o $OSCF_ORG
-  cf target -s $OSCF_SPACE
-  cf push $appname
+  # use a different CF_HOME so we dont collide with the normal deploy
+  mkdir -p ~/.oscf
+  CF_HOME=~/.oscf cf api $OSCF_API
+  CF_HOME=~/.oscf cf auth $OSCF_USER $OSCF_PASSWORD
+  CF_HOME=~/.oscf cf target -o $OSCF_ORG
+  CF_HOME=~/.oscf cf target -s $OSCF_SPACE
+  CF_HOME=~/.oscf cf push $appname
 }
 
 # main script function
