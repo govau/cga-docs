@@ -24,7 +24,7 @@ ASD provide [extensive written advice](http://www.asd.gov.au/publications/protec
 
 The cloud.gov.au team follow [AWS best practices for DDoS resilency](https://d0.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf).
 
-**Find out more about [risks, myths, and misconceptions](https://speakerdeck.com/auxesis/aws-in-government-myths-risks-and-misconceptions) about using IaaS providers like AWS in government.**
+**Find out more about [risks, myths, and misconceptions](https://speakerdeck.com/auxesis/aws-in-government-myths-risks-and-misconceptions) when using IaaS providers like AWS in government.**
 
 ## Start on cloud.gov.au today
 
