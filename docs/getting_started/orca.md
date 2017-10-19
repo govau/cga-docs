@@ -5,7 +5,7 @@
 Status: _DRAFT_    
 Last Updated: 5 September 2016
 
-cloud.gov.au is a best of breed hosting platform for applications written to the [Digital Service Standard](https://www.dto.gov.au/standard/).
+cloud.gov.au is a best of breed hosting platform for applications written to the [Digital Service Standard](https://www.dta.gov.au/standard/).
 
 This list represents a distillation of questions and issues encountered by service delivery teams as building applications on cloud.gov.au.
 
@@ -13,9 +13,9 @@ Some of these questions, like which URL or domain name your application will be 
 Other questions should be revisited as part of the regular assessment of your project.
 
 ### Moratorium
-A [Moratorium](https://www.dto.gov.au/standard/moratorium/) on service investment is in place to limit the fragmentation of the user experience of Australian Government services. However, investments are automatically exempt if the service delivery team can demonstrate they are applying the Digital Service Standard.
+A [Moratorium](https://www.dta.gov.au/standard/moratorium/) on service investment is in place to limit the fragmentation of the user experience of Australian Government services. However, investments are automatically exempt if the service delivery team can demonstrate they are applying the Digital Service Standard.
 
-Consult with your agency's Digital Transformation Coordinator or the Digital Transformation Office for further information.
+Consult with your agency's Digital Transformation Coordinator or the Digital Transformation Agency for further information.
 
 ### What is the URL your application will be served from?
 **Assessment criteria:** onboarding

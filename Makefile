@@ -11,7 +11,7 @@ pa11y-install:
 # Run pa11y against the site
 pa11y-test:
 	@echo "Run pa11y test on site"
-	@pa11y-ci --sitemap "http://$(HOST)/sitemap.xml" --sitemap-find "http://docs.cloud.gov.au/" --sitemap-replace "http://$(HOST)/"
+	@pa11y-ci --sitemap "http://$(HOST)/sitemap.xml" --sitemap-find "https://docs.cloud.gov.au/" --sitemap-replace "http://$(HOST)/"
 
 # Install broken link checker dependencies
 broken-links-install:
