@@ -11,5 +11,4 @@ domains:
 env:
   FORCE_HTTPS: true
 applications:
-- name: cgadocs-blue
-- name: cgadocs-green
+- name: cgadocs
