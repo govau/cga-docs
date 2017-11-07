@@ -10,5 +10,3 @@ domains:
 - docs.cloud.gov.au
 env:
   FORCE_HTTPS: true
-applications:
-- name: cgadocs
