@@ -29,7 +29,7 @@ push-oscf() {
   CF_HOME=~/.oscf cf auth $OSCF_USER $OSCF_PASSWORD
   CF_HOME=~/.oscf cf target -o $OSCF_ORG
   CF_HOME=~/.oscf cf target -s $OSCF_SPACE
-  CF_HOME=~/.oscf cf push $appname
+  CF_HOME=~/.oscf cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
 }
 
 # main script function
@@ -50,7 +50,7 @@ main() {
       cf auth $CF_USER $CF_PASSWORD
       cf target -o $CF_ORG
       cf target -s $CF_SPACE
-      cf push $appname
+      cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
 
       echo "Waiting for the oscf push to finish"
       wait
