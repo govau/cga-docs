@@ -25,6 +25,7 @@ basicauth() {
 push-oscf() {
   # use a different CF_HOME so we dont collide with the normal deploy
   mkdir -p ~/.oscf
+  CF_HOME=~/.oscf cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
   CF_HOME=~/.oscf cf api $OSCF_API
   CF_HOME=~/.oscf cf auth $OSCF_USER $OSCF_PASSWORD
   CF_HOME=~/.oscf cf target -o $OSCF_ORG
