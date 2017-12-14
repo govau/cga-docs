@@ -20,19 +20,6 @@ basicauth() {
   fi
 }
 
-# Push the app to the new OSCF environment
-#
-push-oscf() {
-  # use a different CF_HOME so we dont collide with the normal deploy
-  mkdir -p ~/.oscf
-  CF_HOME=~/.oscf cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
-  CF_HOME=~/.oscf cf api $OSCF_API
-  CF_HOME=~/.oscf cf auth $OSCF_USER $OSCF_PASSWORD
-  CF_HOME=~/.oscf cf target -o $OSCF_ORG
-  CF_HOME=~/.oscf cf target -s $OSCF_SPACE
-  CF_HOME=~/.oscf cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
-}
-
 # main script function
 #
 main() {
@@ -42,19 +29,11 @@ main() {
     master)
       basicauth
 
-      # For performance we push to oscf in the background, and then
-      # continue the normal deploy as normal
-      echo "Pushing to oscf in the background"
-      push-oscf > ${CIRCLE_ARTIFACTS}/push-oscf-out.log 2>${CIRCLE_ARTIFACTS}/push-oscf-err.log &
-
       cf api $CF_API
       cf auth $CF_USER $CF_PASSWORD
       cf target -o $CF_ORG
       cf target -s $CF_SPACE
       cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
-
-      echo "Waiting for the oscf push to finish"
-      wait
 
       ;;
     *)
