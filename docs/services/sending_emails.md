@@ -21,7 +21,7 @@ You should configure your application to use the following settings:
 **Encryption**: STARTTLS  
 **AUTH Type**: LOGIN or PLAIN  
 **AUTH Username**: *whole email address*  
-**AUTH Pass**: Your password will be sent to you via sms .  
+**AUTH Pass**: Your password will be sent to you via sms.  
 
 ### Limitations
 
