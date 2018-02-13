@@ -1,5 +1,7 @@
 # cloud.gov.au docs
 
+[![CircleCI](https://circleci.com/gh/AusDTO/cga_docs/tree/master.svg?style=svg)](https://circleci.com/gh/AusDTO/cga_docs/tree/master)
+
 This repository contains the site code for docs.cloud.gov.au, the cloud.gov.au documentation.
 
 _Disclaimer: this documentation is MVP and currently aimed at digital transformations in Alpha_
