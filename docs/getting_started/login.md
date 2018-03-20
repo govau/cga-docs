@@ -16,10 +16,8 @@ If you need access to an existing project then ask the projects CloudFoundry mai
 ## Login to your project
 
 ```
-cf login -a https://api.system.y.digital.gov.au [--sso]
+cf login -a https://api.system.y.cld.gov.au
 ```
-
-If you are a DTA developer with a digital.gov.au email address, please make sure you append `--sso`
 
 You will then need to enter your email address and password.
 
@@ -28,8 +26,13 @@ Select your project from the list of available Orgs and Spaces.
 You can also define your login options all at once with:
 
 ```
-cf login -a https://api.system.y.digital.gov.au -u <email> -o <org> -s <space> [--sso]
+cf login -a https://api.system.y.cld.gov.au -u <email> -o <org> -s <space> [--sso]
 ```
+
+<div class="callout">
+<p>Please note: DTA users must login with their digital.gov.au account using single sign-on.</p>
+<pre><code>cf login -a https://api.system.y.cld.gov.au --sso</code></pre>
+</div>
 
 ## How to target a different project
 
