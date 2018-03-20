@@ -26,7 +26,7 @@ Select your project from the list of available Orgs and Spaces.
 You can also define your login options all at once with:
 
 ```
-cf login -a https://api.system.y.cld.gov.au -u <email> -o <org> -s <space> [--sso]
+cf login -a https://api.system.y.cld.gov.au -u <email> -o <org> -s <space>
 ```
 
 <div class="callout">
