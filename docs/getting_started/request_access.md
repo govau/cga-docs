@@ -1,6 +1,6 @@
 abstract: How to get a cloud.gov.au account and join or create a project.
 
-<p class="callout">Currently, cloud.gov.au accounts are only available for DTA staff or external teams working with the DTA on existing projects.</p>
+<p class="callout">cloud.gov.au accounts are available for teams from Australian Government agencies (national, state, territory, and local).</p>
 
 ## Join an existing project
 
