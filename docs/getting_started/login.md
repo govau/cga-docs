@@ -27,7 +27,7 @@ You can also define your login options all at once with:
 
 ```
 cf login -a https://api.system.y.cld.gov.au -u <email> -o <org> -s <space>
-cf login -a https://api.system.y.cld.gov.au -sso
+cf login -a https://api.system.y.cld.gov.au --sso
 ```
 
 <div class="callout">
