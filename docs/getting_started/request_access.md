@@ -1,6 +1,6 @@
 abstract: How to get a cloud.gov.au account and join or create a project.
 
-<p class="callout">cloud.gov.au accounts are available for teams from Australian Government agencies (national, state, territory, and local).</p>
+<p class="callout">Accounts are available for Digital Transformation Agency (DTA) staff, as well as staff from government agencies that have an agreement with the DTA to use cloud.gov.au. If your agency is interested in using cloud.gov.au, please [email us](mailto:support@cloud.gov.au) so we can discuss your needs.</p>
 
 ## Join an existing project
 
