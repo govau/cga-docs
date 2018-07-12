@@ -41,7 +41,7 @@ Please contact the [Domain Provider for your jurisdiction](http://www.domainname
 
 #### Subdomain options
 
-To use a subdomain of an existing agency/topic domain, consult with the [Registrant contact](http://whois.ausregistry.net.au/whois/whois_local.jsp?) of the intended domain to determine if this an appropropriate solution and to arrange its creation in the DNS zone file.  
+To use a subdomain of an existing agency/topic domain, consult with the [Registrant contact](https://whois.auda.ltd/) of the intended domain to determine if this an appropropriate solution and to arrange its creation in the DNS zone file.  
 
 ### Is your application built in Ruby, Python, Node, Java, or Go?
 **Assessment criteria:** onboarding
