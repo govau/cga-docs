@@ -1,0 +1,54 @@
+version: 2
+jobs:
+    build-and-test-docs:
+        working_directory: ~/cga_docs
+        docker:
+            - image: circleci/python:2.7.15
+        steps:
+            - checkout
+            - run:
+                  name: Install dependencies
+                  command: pip install --user -r requirements.txt
+            - run: ~/.local/bin/mkdocs --version
+            - run: 
+                  name: Install nodejs
+                  command: |
+                          wget -qO- https://deb.nodesource.com/setup_8.x | sudo -E bash -
+                          sudo apt-get install -y build-essential nodejs 
+            - run:
+                  name: Install pa11y
+                  command: make pa11y-install
+            - run:
+                  name: Install broken-links-install
+                  command: make broken-links-install
+            - run:
+                  name: Build mkdocs
+                  command: ~/.local/bin/mkdocs build
+            - persist_to_workspace:
+                  root: ~/cga_docs
+                  paths:
+                      - site
+                      - manifest.yml
+    deploy-docs:
+        docker:
+            - image: govau/cf-cli
+        steps:
+            - attach_workspace:
+                  at: ~/cga_docs
+            - run:
+                  name: Deploy to cloud.gov.au
+                  command: |
+                      cf login -a $CF_API -o $CF_ORG -s $CF_SPACE -u $CF_USER -p $CF_PASSWORD
+                      cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
+workflows:
+    version: 2
+    build-test-and-deploy:
+        jobs:
+            - build-and-test-docs
+            - deploy-docs:
+                  requires:
+                      - build-and-test-docs
+                  filters:
+                      branches:
+                          only:
+                              - master
