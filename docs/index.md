@@ -18,7 +18,7 @@ To help teams release changes faster and more safely, all changes to production 
 
 ## Secure and scalable
 
-AWS is IRAP certified by accredited by the Australian Signals Directorate up to Unclassified DLM, and are listed on the ASD [Certified Cloud Services List (CCSL)](http://www.asd.gov.au/infosec/irap/certified_clouds.htm).
+AWS is IRAP certified and accredited by the Australian Signals Directorate up to Unclassified DLM, and are listed on the ASD [Certified Cloud Services List (CCSL)](http://www.asd.gov.au/infosec/irap/certified_clouds.htm).
 
 ASD provide [extensive written advice](http://www.asd.gov.au/publications/protect/cloud-security-tenants.htm) about using public cloud infrastructure.
 
