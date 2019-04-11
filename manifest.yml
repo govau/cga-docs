@@ -3,7 +3,7 @@
 path: site/
 memory: 64M
 disk_quota: 64M
-instances: 1
+instances: 2
 buildpack: staticfile_buildpack
 no-hostname: true
 domains:
