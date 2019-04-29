@@ -1,12 +1,22 @@
-
+@import '_variables';
 @import '_pancake';
 @import '_sidebar';
 
-.main {
+main {
   @include AU-space( padding-bottom, 6unit );
 }
 
-.visuallyhidden {
+// Override grid settings
+.au-grid .container-fluid {
+	@include AU-space( max-width, 83unit );
+
+	@include AU-media( xs ){
+		@include AU-space( padding-left, 2unit );
+		@include AU-space( padding-right, 2unit );
+	}
+}
+
+.visuallyhidden { 
   @include AU-sronly();
 }
 
