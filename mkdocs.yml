@@ -1,6 +1,6 @@
 site_name: cloud.gov.au documentation
 site_url: https://docs.cloud.gov.au
-repo_url: https://github.com/AusDTO/cga_docs
+repo_url: https://github.com/govau/cga-docs
 site_description: "Documentation for users of cloud.gov.au"
 theme: gov-au-theme
 theme_dir: 'theme_overrides'

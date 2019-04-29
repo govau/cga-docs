@@ -1,7 +1,7 @@
 version: 2
 jobs:
     build-and-test-docs:
-        working_directory: ~/cga_docs
+        working_directory: ~/cga-docs
         docker:
             # Python 2 LTS as of 10/18
             - image: circleci/python:2.7.15 
@@ -30,7 +30,7 @@ jobs:
                   # Requires Python ~2.7
                   command: ~/.local/bin/mkdocs build 
             - persist_to_workspace:
-                  root: ~/cga_docs
+                  root: ~/cga-docs
                   paths:
                       - site
                       - manifest.yml
@@ -39,11 +39,11 @@ jobs:
             - image: govau/cf-cli
         steps:
             - attach_workspace:
-                  at: ~/cga_docs
+                  at: ~/cga-docs
             - run:
                   name: Deploy to cloud.gov.au
                   command: |
-                      cd ~/cga_docs
+                      cd ~/cga-docs
                       cf login -a $CF_API -o $CF_ORG -s $CF_SPACE -u $CF_USER -p $CF_PASSWORD
                       cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
 workflows:

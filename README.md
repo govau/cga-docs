@@ -1,6 +1,6 @@
 # cloud.gov.au docs
 
-[![CircleCI](https://circleci.com/gh/AusDTO/cga_docs/tree/master.svg?style=svg)](https://circleci.com/gh/AusDTO/cga_docs/tree/master)
+[![CircleCI](https://circleci.com/gh/govau/cga-docs/tree/master.svg?style=svg)](https://circleci.com/gh/govau/cga-docs/tree/master)
 
 This repository contains the site code for docs.cloud.gov.au, the cloud.gov.au documentation.
 
@@ -8,18 +8,18 @@ _Disclaimer: this documentation is MVP and currently aimed at digital transforma
 
 ## Contributing
 
-We're so glad you're thinking about contributing to docs.cloud.gov.au. If you're unsure about anything, just ask -- or submit the issue or pull request anyway. The worst that can happen is you'll be politely asked to change something. We love all friendly contributions. You can read our [contributing guide](https://github.com/AusDTO/cga_docs/blob/master/contributing.md) for more detailed information.
+We're so glad you're thinking about contributing to docs.cloud.gov.au. If you're unsure about anything, just ask -- or submit the issue or pull request anyway. The worst that can happen is you'll be politely asked to change something. We love all friendly contributions. You can read our [contributing guide](https://github.com/govau/cga-docs/blob/master/contributing.md) for more detailed information.
 
 ### Ways to contribute
 
 1. Send a pull request with your proposed changes
-2. [Raise an issue](https://github.com/AusDTO/cga_docs/issues)
+2. [Raise an issue](https://github.com/govau/cga-docs/issues)
 
 ### Proposing content updates with github.com
 
 We want the cloud.gov.au documentation to be the best it can be. We've open-sourced our docs and we welcome any pull requests if you would like to contribute.
 
-1. Navigate to the file within [`/docs`](https://github.com/AusDTO/cga_docs/tree/master/docs) that you'd like to edit. Our documents are organised into folders that represent the sections and subsection of cloud.gov.au)
+1. Navigate to the file within [`/docs`](https://github.com/govau/cga-docs/tree/master/docs) that you'd like to edit. Our documents are organised into folders that represent the sections and subsection of cloud.gov.au)
 2. Click the pencil icon in the top right corner to edit the file
 3. Make your proposed changes
 4. Click "Propose file change"

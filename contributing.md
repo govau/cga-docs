@@ -5,13 +5,13 @@ We're so glad you're thinking about contributing to docs.cloud.gov.au. If you're
 ## Ways to contribute
 
 - Option A) Send a pull request with your proposed changes
-- Option B) [Raise an issue](https://github.com/AusDTO/cga_docs/issues)
+- Option B) [Raise an issue](https://github.com/govau/cga-docs/issues)
 
 ## Proposing content updates with github.com (Option A)
 
 We want the cloud.gov.au documentation to be the best it can be. We've open-sourced our docs and we welcome any pull requests if you would like to contribute.
 
-1. Navigate to the file within [`/docs`](https://github.com/AusDTO/cga_docs/tree/master/docs) that you'd like to edit. Our documents are organised into folders that represent the sections and subsection of cloud.gov.au)
+1. Navigate to the file within [`/docs`](https://github.com/govau/cga-docs/tree/master/docs) that you'd like to edit. Our documents are organised into folders that represent the sections and subsection of cloud.gov.au)
 2. Click the pencil icon in the top right corner to edit the file
 3. Make your proposed changes
 4. Click "Propose file change"
@@ -76,9 +76,9 @@ Then run the test by using:
 
 ### Submitting a pull request via Git command line
 
-1. Fork the project by clicking "Fork" in the top right corner of [`cga_docs`](https://github.com/AusDTO/cga_docs).
-2. Clone the repository locally `git clone https://github.com/<you-username>/cga_docs`.
+1. Fork the project by clicking "Fork" in the top right corner of [`cga-docs`](https://github.com/govau/cga-docs).
+2. Clone the repository locally `git clone https://github.com/<you-username>/cga-docs`.
 3. Create a new, descriptively named branch to contain your change ( `git checkout -b my-new-feature` ).
 4. Write your code.
 5. Push the branch up ( `git push origin my-new-feature` ).
-6. Create a pull request by visiting `https://github.com/<your-username>/cga_docs` and following the instructions at the top of the screen.
+6. Create a pull request by visiting `https://github.com/<your-username>/cga-docs` and following the instructions at the top of the screen.

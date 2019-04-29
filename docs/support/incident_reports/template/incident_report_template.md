@@ -1,6 +1,6 @@
 <Incident report template>
 <Delete all items greater than/less than "<>" symbols as you complete this template>
-<Add your completed report to /AusDTO/cga_docs/blob/master/docs/support/incident_reports/YEAR-MONTH-DATE.md> 
+<Add your completed report to /govau/cga-docs/blob/master/docs/support/incident_reports/YEAR-MONTH-DATE.md> 
 
 # <Month> <Date>, <Year> incident report
 
