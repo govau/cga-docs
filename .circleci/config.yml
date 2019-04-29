@@ -4,7 +4,7 @@ jobs:
         working_directory: ~/cga-docs
         docker:
             # Python 2 LTS as of 10/18
-            - image: circleci/python:2.7.15 
+            - image: circleci/python:2.7.15
         steps:
             - checkout
             - run:
@@ -12,13 +12,13 @@ jobs:
                   # Default pip location is not on circleci's $PATH and cannot be easily added.
                   # Use --user to build to ~/.local/bin
                   command: pip install --user -r requirements.txt
-            - run: 
+            - run:
                   name: Install nodejs
-                  # Had a hard time persisting ~/.local/bin/mkdocs and others, quickest option was to 
+                  # Had a hard time persisting ~/.local/bin/mkdocs and others, quickest option was to
                   # do in the one container :(
                   command: |
                           wget -qO- https://deb.nodesource.com/setup_8.x | sudo -E bash -
-                          sudo apt-get install -y nodejs 
+                          sudo apt-get install -y nodejs
             - run:
                   name: Install pa11y
                   command: make pa11y-install
@@ -28,7 +28,7 @@ jobs:
             - run:
                   name: Build mkdocs
                   # Requires Python ~2.7
-                  command: ~/.local/bin/mkdocs build 
+                  command: ~/.local/bin/mkdocs build
             - persist_to_workspace:
                   root: ~/cga-docs
                   paths:
@@ -46,16 +46,27 @@ jobs:
                       cd ~/cga-docs
                       cf login -a $CF_API -o $CF_ORG -s $CF_SPACE -u $CF_USER -p $CF_PASSWORD
                       cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
-    build-and-test-docs-hugo:
+    build-hugo:
         working_directory: ~/cga-docs
         docker:
             - image: govau/cga-docs:hugo
         steps:
             - checkout
+            - restore_cache:
+                keys:
+                  # when lock file changes, use increasingly general patterns to restore cache
+                  - node-v1-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
+                  - node-v1-{{ .Branch }}-
+                  - node-v1-
             - run:
                   name: Build theme
                   command: site/themes/designsystem.gov.au/build.sh
-            - run: 
+            - save_cache:
+                paths:
+                  - cga-docs/site/themes/designsystem.gov.au/src/node_modules
+                  # - /usr/lib/node_modules/npm/node_modules/  # location depends on npm version
+                key: node-v1-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
+            - run:
                   name: Build site
                   command: cd site && hugo --baseURL https://cgadocs-hugo.apps.y.cld.gov.au/
             - persist_to_workspace:
@@ -63,7 +74,19 @@ jobs:
                   paths:
                       - site/public
                       - manifest-staging.yml
-    deploy-docs-hugo:
+    test-hugo:
+      working_directory: ~/cga-docs
+      docker:
+        # - image: govau/cga-cli:latest
+        - image: nginx:1.15-alpine
+      steps:
+        - run: apk update && apk add ca-certificates curl
+        - attach_workspace:
+            at: ~/cga-docs
+        - run: cp -rf site/public/* /usr/share/nginx/html
+        - run: curl -i http://localhost:80
+
+    deploy-hugo:
         docker:
             - image: govau/cf-cli
         steps:
@@ -78,7 +101,7 @@ jobs:
 workflows:
   version: 2
   build-test-and-deploy:
-    jobs: 
+    jobs:
       - build-and-test-docs:
           filters:
             branches:
@@ -91,27 +114,21 @@ workflows:
             branches:
               only:
                 - master
-          # While working on hugo, deploy its branch to staging.
-          # This can be deleted when merged.
-      - deploy-docs-staging:
-          requires:
-            - build-and-test-docs
-          filters:
-            branches:
-              only:
-                - hugo
-    # While working on hugo, deploy its branch to staging.
-    # This can be deleted when merged.
   build-test-and-deploy-hugo:
     jobs:
-      - build-and-test-docs-hugo:
+      - build-hugo:
           filters:
             branches:
               only:
                 - hugo
-      - deploy-docs-hugo:
+      - test-hugo:
           requires:
-            - build-and-test-docs-hugo
+            - build-hugo
+      - deploy-hugo:
+          # While working on hugo, deploy its branch to staging.
+          # This can be deleted when merged.
+          requires:
+            - test-hugo
           filters:
             branches:
               only:
