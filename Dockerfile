@@ -2,31 +2,32 @@ FROM ubuntu:18.04
 
 # Install things with apt
 RUN apt-get update && \
-    apt-get -y --no-install-recommends install \
-    asciidoc \
-    ca-certificates \
-    curl \
-    git \
-    gnupg2 \
-    python-pygments
+  apt-get -y --no-install-recommends install \
+  asciidoc \
+  ca-certificates \
+  curl \
+  git \
+  gnupg2 \
+  openssh-client \
+  python-pygments
 
 RUN bash -o pipefail -c "curl -L https://deb.nodesource.com/setup_10.x | bash" && \
-    curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
-    apt-get update && \
-    apt-get -y install \
-    nodejs \
-    yarn \
-    && \
-    rm -rf /var/lib/apt/lists/*
+  curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+  echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+  apt-get update && \
+  apt-get -y install \
+  nodejs \
+  yarn \
+  && \
+  rm -rf /var/lib/apt/lists/*
 
 ENV HUGO_VERSION 0.38.2
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.deb
 
 # Download and install hugo
 RUN bash -o pipefail -c "curl -sL https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY} > /tmp/${HUGO_BINARY} && \
-    dpkg -i /tmp/${HUGO_BINARY} && \
-    rm /tmp/${HUGO_BINARY}"
+  dpkg -i /tmp/${HUGO_BINARY} && \
+  rm /tmp/${HUGO_BINARY}"
 
 WORKDIR /app
 
