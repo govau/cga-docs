@@ -1,0 +1,9 @@
+---
+applications:
+- name: cga_docs
+  path: site/public
+  memory: 64M
+  disk_quota: 64M
+  instances: 1
+  buildpacks:
+  - staticfile_buildpack

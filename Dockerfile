@@ -1,5 +1,4 @@
 FROM ubuntu:18.04
-MAINTAINER support@cloud.gov.au
 
 # Install things with apt
 RUN apt-get update && \
@@ -9,9 +8,7 @@ RUN apt-get update && \
     curl \
     git \
     gnupg2 \
-    python-pygments \
-    && \
-    echo
+    python-pygments
 
 RUN bash -o pipefail -c "curl -L https://deb.nodesource.com/setup_10.x | bash" && \
     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
@@ -31,13 +28,14 @@ RUN bash -o pipefail -c "curl -sL https://github.com/gohugoio/hugo/releases/down
     dpkg -i /tmp/${HUGO_BINARY} && \
     rm /tmp/${HUGO_BINARY}"
 
-WORKDIR /app/site
+WORKDIR /app
 
-COPY site /app/site
+VOLUME /app
+
 EXPOSE 1313
 
 # build the theme
 # RUN themes/designsystem.gov.au/build.sh
 
-# By default, serve site
-CMD hugo server -b http://localhost:1313 --bind=0.0.0.0 --noHTTPCache --port 1313
+# serve site
+# CMD hugo server -b http://localhost:1313 --bind=0.0.0.0 --noHTTPCache --port 1313

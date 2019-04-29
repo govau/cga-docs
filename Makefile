@@ -30,5 +30,5 @@ all:	latest
 
 .PHONY:	latest
 latest:	Dockerfile
-	docker build -t cga_docs:latest .
+	docker build -t cga-docs:latest .
 
