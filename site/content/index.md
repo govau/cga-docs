@@ -1,3 +1,24 @@
+---
+title: cloud.gov.au documentation
+---
+
+<nav class="au-inpage-nav-links">
+  <h2 class="au-inpage-nav-links__heading">Contents</h2>
+  <ul class="au-link-list">
+  <li>
+    <a href="#the-platform-for-building-the-future">The platform for building the future.</a>
+  </li>
+  <li>
+    <a href="#industry-standard-technology-best-practice-approach">Industry standard technology, best-practice approach</a>
+  </li>
+  <li>
+    <a href="#secure-and-scalable">Secure and scalable</a></li>
+  <li>
+    <a href="#start-on-cloudgovau-today">Start on cloud.gov.au today</a>
+   </li>
+  </ul>
+</nav>
+
 ## The platform for building the future.
 
 cloud.gov.au is a place to run web apps, freeing up teams to focus on writing code that meets user needs. It provides a faster, safer, standard way to change web apps without impacting the user. It also provides real-time visibility and insight into web app usage, performance, and behaviour.

@@ -1,5 +1,6 @@
-site/
 .DS_Store
 node_modules
 .idea/
 cga_docs.iml
+site/static
+_pancake.scss
