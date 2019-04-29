@@ -74,7 +74,7 @@ jobs:
                   command: |
                       cd ~/cga-docs
                       cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USER -p $CF_PASSWORD_STAGING
-                      cf zero-downtime-push cgadocs -f manifest-staging.yml
+                      cf zero-downtime-push cgadocs-hugo -f manifest-staging.yml
 workflows:
   version: 2
   build-test-and-deploy:
