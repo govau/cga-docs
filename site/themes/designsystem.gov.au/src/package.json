@@ -1,0 +1,79 @@
+{
+  "name": "gohugo-theme-designsystem.gov.au",
+  "version": "1.0.0",
+  "description": "Theme for gohugo.io using designsystem.gov.au",
+  "engines": {
+    "npm": ">=3.0.0"
+  },
+  "scripts": {
+    "build:dir": "mkdir -p ../static/dist/js/ ../static/dist/css/",
+    "build:js": "uglifyjs --source-map --output ../static/dist/js/index.js --compress --mangle -- js/*.js",
+    "build:css": "sass sass/main.scss ../static/dist/css/style.css --style compressed",
+    "build": "npm run build:dir && npm run build:js | npm run build:css",
+    "watch": "onchange js/*.js sass/*.scss -- npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "onchange": "^4.1.0"
+  },
+  "dependencies": {
+    "@gov.au/accordion": "^7.0.7",
+    "@gov.au/animate": "^1.0.12",
+    "@gov.au/body": "^2.1.1",
+    "@gov.au/breadcrumbs": "^3.0.4",
+    "@gov.au/buttons": "^3.0.6",
+    "@gov.au/callout": "^3.0.1",
+    "@gov.au/core": "^3.4.1",
+    "@gov.au/cta-link": "^2.1.9",
+    "@gov.au/direction-links": "^2.1.9",
+    "@gov.au/footer": "^3.0.4",
+    "@gov.au/grid-12": "^2.0.9",
+    "@gov.au/header": "^4.1.11",
+    "@gov.au/headings": "^2.0.10",
+    "@gov.au/inpage-nav": "^3.0.5",
+    "@gov.au/link-list": "^3.0.6",
+    "@gov.au/main-nav": "^1.0.6",
+    "@gov.au/page-alerts": "^2.1.2",
+    "@gov.au/side-nav": "^5.0.7",
+    "@gov.au/skip-link": "^2.0.15",
+    "@gov.au/tags": "^3.1.6",
+    "sass": "^1.19.0",
+    "uglify-es": "^3.3.9"
+  },
+  "pancake": {
+    "auto-save": true,
+    "plugins": true,
+    "ignore": [],
+    "json": {
+      "enable": false
+    },
+    "sass": {
+      "modules": false,
+      "location": "sass/",
+      "name": "_pancake.scss"
+    },
+    "js": {
+      "minified": true,
+      "modules": false,
+      "location": "js/",
+      "name": "_pancake.min.js"
+    },
+    "react": {
+      "location": false
+    },
+    "css": {
+      "minified": true,
+      "modules": false,
+      "browsers": [
+        "last 2 versions",
+        "ie 8",
+        "ie 9",
+        "ie 10"
+      ],
+      "location": "pancake/css/",
+      "name": false
+    }
+  }
+}

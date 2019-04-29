@@ -1,0 +1,16 @@
+
+@import '_pancake';
+@import '_sidebar';
+
+.main {
+  @include AU-space( padding-bottom, 6unit );
+}
+
+.visuallyhidden {
+  @include AU-sronly();
+}
+
+// User agent stylesheet override
+body {
+  margin: 0
+}

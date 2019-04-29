@@ -1,0 +1,32 @@
+<!-- HEADER -->
+<div class="header-wrapper">
+  <!-- SKIP-LINKS -->
+  <nav class="au-skip-link">
+    <a class="au-skip-link__link" href="#content">Skip to main content</a>
+    <!-- TODO -->
+    <!-- <a class="au-skip-link__link" href="#nav">Skip to main navigation</a> -->
+  </nav>
+
+  <div class="header">
+    <div class="au-header au-header--dark" role="banner">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <a class="au-header__brand" href="/">
+              <img class="au-header__brand-image" alt="The Australian Government coat of Arms"
+                src="{{ "images/header-logo-agov.png" | absURL }}">
+              <div class="au-header__text">
+                <h1 class="au-header__heading">{{ .Title | default .Site.Title }}</h1>
+                <div class="au-header__subline">
+                  Documentation for cloud.gov.au
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ partial "site-navigation.html" . }}
+  </div>
+
+</div>

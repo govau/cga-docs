@@ -1,0 +1,22 @@
+<!-- From Pagey - pre-release version of sidebar -->
+<nav class="au-side-nav">
+  <a
+      class="au-side-nav__toggle au-accordion__title au-accordion--closed"
+      aria-controls="nav-default"
+      aria-expanded="false"
+      aria-selected="false"
+      role="tab"
+      onClick="return AU.accordion.Toggle( this )">
+      In this section
+  </a>
+  <div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body" aria-hidden="true">
+    <h2 class="au-sidenav__title">
+      <a href="/">Getting started</a>
+    </h2>
+    <ul class="au-link-list">
+      {{ range .Site.Menus.getting_started }}
+      <li><a href="{{ .URL }}">{{- .Name -}}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>

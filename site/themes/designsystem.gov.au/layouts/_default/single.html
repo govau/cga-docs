@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ if $.Param "Abstract" }}
+
+  <div class="abstract">
+    {{ $.Param "Abstract" }}
+  </div>
+  {{ end }}
+  {{ .Content }} 
+{{ end }}
