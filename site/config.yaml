@@ -1,0 +1,5 @@
+baseURL: https://docs.cloud.gov.au/
+languageCode: en-au
+title: cloud.gov.au documentation
+theme: designsystem.gov.au
+sectionPagesMenu: main

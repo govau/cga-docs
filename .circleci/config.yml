@@ -57,7 +57,7 @@ jobs:
                   command: site/themes/designsystem.gov.au/build.sh
             - run: 
                   name: Build site
-                  command: cd site && hugo
+                  command: cd site && hugo --baseURL https://cgadocs-hugo.apps.y.cld.gov.au/
             - persist_to_workspace:
                   root: ~/cga-docs
                   paths:
