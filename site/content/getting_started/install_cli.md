@@ -1,4 +1,7 @@
+---
+title: Install command line tools
 abstract: As a user, most of your interactions with Cloud Foundry will be through the command line.
+---
 
 Install the `cf` command line tool using the instructions at [https://docs.cloudfoundry.org/cf-cli/install-go-cli.html](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html).
 

@@ -1,4 +1,7 @@
+---
+title: Reset CloudFoundry password
 abstract: What to do if you’ve forgotten your password or need to change it.
+---
 
 ## How to change your password
 

@@ -1,5 +1,8 @@
+---
+title: Zero downtime deploys
 abstract: How to ensure your application is available even during a deployment.
 hide_toc: true
+---
 
 When updating an application with `cf push`, there is some downtime while the application deploys.
 While this may be okay during development, it usually is not for production. You can solve this by having

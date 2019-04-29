@@ -1,4 +1,7 @@
+---
+title: Environment variables
 abstract: How to add secure environment variables to CloudFoundry.
+---
 
 Show the current environment variables for an app with:
 

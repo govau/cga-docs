@@ -1,4 +1,7 @@
+---
+title: Login to CloudFoundry
 abstract: How to login to CloudFoundry
+---
 
 <div class="callout">
 <p>Before you can login you will need to:</p>

@@ -1,10 +1,13 @@
+---
+title: Incident response
 abstract: What to do when there’s an incident with your application availability and how we will respond.
+---
 
 ## Status and availability reports
 
 We publish status and availability for the platform and applications on:
 
-[status.cloud.gov.au](http://status.cloud.gov.au)
+[status.cloud.gov.au](https://status.cloud.gov.au)
 
 During incidents, we commit to delivering status updates every 15 minutes.
 
@@ -45,7 +48,7 @@ What you not should _not_ escalate to the cloud.gov.au team:
 How to escalate incidents to us:
 
 * Send a support ticket to [support.cloud.gov.au](mailto:support@cloud.gov.au), or
-* Send an email to [incidents@cloud.gov.au](mailto:support@cloud.gov.au)
+* Send an email to [incidents@cloud.gov.au](mailto:incidents@cloud.gov.au)
 
 This will post a notification in #cloud-gov-au on Slack and alert the primary on-call for cloud.gov.au, who will triage the incident.
 

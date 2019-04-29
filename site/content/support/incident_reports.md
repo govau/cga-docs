@@ -1,5 +1,8 @@
+---
+title: Post Incident Reports
 abstract: Whenever there is an incident, we run a Post Incident Reports to learn about what happened and what we can do differently.
 hide_toc: true
+---
 
 We take the performance of our platform seriously. While we rely on our suppliers to provide software and infrastructure to deliver cloud.gov.au, we own our availability and we take full responsibility for service performance.
 

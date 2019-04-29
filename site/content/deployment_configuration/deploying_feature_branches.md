@@ -1,3 +1,6 @@
+---
+title: Deploying feature branches
+---
 Many teams use feature branches to develop new features for their application.
 Feature branches allow teams to test and review changes before deploying. It is useful to have a deployed version of a feature branch for reviewers to view. There are a few different ways of doing this.
 

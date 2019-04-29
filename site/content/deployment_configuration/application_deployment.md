@@ -1,4 +1,7 @@
+---
+title: Push an application
 abstract: How to deploy your application to CloudFoundry using cf push.
+---
 
 The command to create a new app and to push a new version of an existing one are the same: `cf push`.
 

@@ -1,4 +1,7 @@
+---
+title: Log access
 abstract: How to access your applications’ log output.
+---
 
 To see your application’s log output use:
 

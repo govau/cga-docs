@@ -1,5 +1,5 @@
 ---
-title: cloud.gov.au documentation
+title: Welcome
 ---
 
 <nav class="au-inpage-nav-links">

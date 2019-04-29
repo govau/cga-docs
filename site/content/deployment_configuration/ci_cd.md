@@ -1,5 +1,8 @@
+---
+title: Setup Continuous deployment
 abstract: How Continuous deployment works.
 hide_toc: true
+---
 
 Continuous deployment allows you to safely automate the testing and deployment of your application. It reduces the risk of manual deployments through repeatable, automated, tested deployments.
 

@@ -1,4 +1,7 @@
+---
+title: Create manifest.yml
 abstract: How to configure the deployment settings of your CloudFoundry application.
+---
 
 Application manifests tell `cf push` what to do with applications. This includes information such as disk size and which buildpack to use.
 
