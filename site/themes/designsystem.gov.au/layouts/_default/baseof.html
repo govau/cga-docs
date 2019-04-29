@@ -13,60 +13,60 @@
 <!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
 
-  <meta name="viewport" content="width=device-width,minimum-scale=1">
-  {{ .Hugo.Generator }}
-  {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
-  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-  {{ else }}
-  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-  {{ end }}
-  <link rel="shortcut icon" href="/images/favicon.png?v=0">
-  <link href="{{ relURL ("dist/css/style.css") }}" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	{{ .Hugo.Generator }}
+	{{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
+	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+	{{ else }}
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	{{ end }}
+	<link rel="shortcut icon" href="/images/favicon.png?v=0">
+	<link href="{{ relURL ("dist/css/style.css") }}" rel="stylesheet">
 
-  {{ range .Site.Params.custom_css }}
-  <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
-  {{ end }}
+	{{ range .Site.Params.custom_css }}
+	<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+	{{ end }}
 
-  {{ if .RSSLink }}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-  {{ end }}
+	{{ if .RSSLink }}
+	<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+	<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+	{{ end }}
 
-  {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
-  {{- template "_internal/opengraph.html" . -}}
-  {{- template "_internal/google_news.html" . -}}
-  {{- template "_internal/schema.html" . -}}
-  {{- template "_internal/twitter_cards.html" . -}}
+	{{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
+	{{- template "_internal/opengraph.html" . -}}
+	{{- template "_internal/google_news.html" . -}}
+	{{- template "_internal/schema.html" . -}}
+	{{- template "_internal/twitter_cards.html" . -}}
 
-  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-  {{ template "_internal/google_analytics_async.html" . }}
-  {{ end }}
+	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+	{{ template "_internal/google_analytics_async.html" . }}
+	{{ end }}
 </head>
 
 <body class="au-grid {{ $.Param "body_classes"  | default ""}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-  {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+	{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
 
-  <div class="page-wrapper">
-    <div class="content-wrapper">
-      <div class="au-body">
-        <main tabindex="-1" id="content" class="main container-fluid">
-          <div class="row">
-            {{ partial "sidebar.html" . }}
-            {{ block "main" . }}{{ end }}
-          </div>
-        </main>
-        {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
-        {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
-      </div>
-    </div>
-  </div>
+	<div class="page-wrapper">
+		<div class="content-wrapper">
+			<div class="au-body">
+				<main tabindex="-1" id="content" class="container-fluid">
+					<div class="row">
+						{{ partial "sidebar.html" . }}
+						{{ block "main" . }}{{ end }}
+					</div>
+				</main>
+				{{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+				{{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
