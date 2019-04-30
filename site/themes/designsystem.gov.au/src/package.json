@@ -6,10 +6,9 @@
     "npm": ">=3.0.0"
   },
   "scripts": {
-    "build:dir": "mkdir -p ../static/dist/js/ ../static/dist/css/",
-    "build:js": "uglifyjs --source-map --output ../static/dist/js/index.js --compress --mangle -- js/*.js",
-    "build:css": "sass sass/main.scss ../static/dist/css/style.css --style compressed",
-    "build": "npm run build:dir && npm run build:js | npm run build:css",
+    "build:js": "mkdirp ../static/dist/js && uglifyjs --source-map --output ../static/dist/js/index.js --compress --mangle -- js/*.js",
+    "build:css": "mkdirp ../static/dist/css && sass sass/main.scss ../static/dist/css/style.css --style compressed",
+    "build": "npm run build:js | npm run build:css",
     "watch": "onchange js/*.js sass/*.scss -- npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -39,6 +38,7 @@
     "@gov.au/side-nav": "^5.0.7",
     "@gov.au/skip-link": "^2.0.15",
     "@gov.au/tags": "^3.1.6",
+    "mkdirp": "^0.5.1",
     "sass": "^1.19.0",
     "uglify-es": "^3.3.9"
   },
@@ -47,7 +47,16 @@
     "plugins": true,
     "ignore": [],
     "json": {
-      "enable": false
+      "enable": false,
+      "location": "pancake/",
+      "name": "pancake",
+      "content": {
+        "name": true,
+        "version": true,
+        "dependencies": true,
+        "path": true,
+        "settings": true
+      }
     },
     "sass": {
       "modules": false,

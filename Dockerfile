@@ -21,7 +21,7 @@ RUN bash -o pipefail -c "curl -L https://deb.nodesource.com/setup_10.x | bash" &
   && \
   rm -rf /var/lib/apt/lists/*
 
-ENV HUGO_VERSION 0.38.2
+ENV HUGO_VERSION 0.55.4
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.deb
 
 # Download and install hugo

@@ -4,7 +4,7 @@ abstract: How to delete your application from CloudFoundry.
 ---
 
 Get a list of existing apps deployed in the current space with:
-
+ 
 ```
 cf apps
 ```

@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div>
+  <ul>
+    {{ range .Data.Pages.ByDate.Reverse }}
+    <li>
+      <a href="{{ .Permalink}}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

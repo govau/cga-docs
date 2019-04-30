@@ -14,7 +14,7 @@ title: Welcome
   <li>
     <a href="#secure-and-scalable">Secure and scalable</a></li>
   <li>
-    <a href="#start-on-cloudgovau-today">Start on cloud.gov.au today</a>
+    <a href="#start-on-cloud-gov-au-today">Start on cloud.gov.au today</a>
    </li>
   </ul>
 </nav>

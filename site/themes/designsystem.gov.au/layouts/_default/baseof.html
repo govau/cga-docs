@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--[if lt IE 8]>
-	<html class="no-js lt-ie8 lt-ie9" lang="en">
+	<html class="no-js lt-ie8 lt-ie9" lang="{{ $.Site.LanguageCode | default "en" }}">
 <![endif]-->
 <!--[if IE 8]>
-	<html class="no-js lt-ie9 ie8" lang="en">
+	<html class="no-js lt-ie9 ie8" lang="{{ $.Site.LanguageCode | default "en" }}">
 <![endif]-->
 <!--[if IE 9 ]>
-	<html class="no-js ie9" lang="en">
+	<html class="no-js ie9" lang="{{ $.Site.LanguageCode | default "en" }}">
 <![endif]-->
 <!--[if !(IE)]><!-->
 <html class="no-js" lang="{{ $.Site.LanguageCode | default "en" }}">
@@ -18,14 +18,13 @@
 	<title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
-
 	<meta name="viewport" content="width=device-width,minimum-scale=1">
-	{{ .Hugo.Generator }}
+	{{ hugo.Generator }}
 	{{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
 	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+	<meta name="ROBOTS" content="INDEX, FOLLOW">
 	{{ else }}
-	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 	{{ end }}
 	<link rel="shortcut icon" href="/images/favicon.png?v=0">
 	<link href="{{ relURL ("dist/css/style.css") }}" rel="stylesheet">
@@ -34,9 +33,10 @@
 	<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
 	{{ end }}
 
-	{{ if .RSSLink }}
-	<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-	<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+	{{ $siteTitle := .Site.Title }}
+	{{ with .OutputFormats.Get "RSS" }}
+	<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }}" />
+	<link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $siteTitle }}" />
 	{{ end }}
 
 	{{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
@@ -51,7 +51,7 @@
 </head>
 
 <body class="au-grid {{ $.Param "body_classes"  | default ""}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-	{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+	{{ block "header" . }}{{ partial "header.html" .}}{{ end }}
 
 	<div class="page-wrapper">
 		<div class="content-wrapper">
@@ -62,7 +62,7 @@
 						{{ block "main" . }}{{ end }}
 					</div>
 				</main>
-				{{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+				{{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 				{{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
 			</div>
 		</div>
