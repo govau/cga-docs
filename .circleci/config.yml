@@ -54,18 +54,14 @@ jobs:
             - checkout
             - restore_cache:
                 keys:
-                  # when lock file changes, use increasingly general patterns to restore cache
-                  - node-v1-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
-                  - node-v1-{{ .Branch }}-
-                  - node-v1-
+                  - node-v2-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
             - run:
                   name: Build theme
                   command: site/themes/designsystem.gov.au/build.sh
             - save_cache:
                 paths:
-                  - cga-docs/site/themes/designsystem.gov.au/src/node_modules
-                  # - /usr/lib/node_modules/npm/node_modules/  # location depends on npm version
-                key: node-v1-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
+                  - site/themes/designsystem.gov.au/src/node_modules
+                key: node-v2-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
             - run:
                   name: Build site
                   command: cd site && hugo --baseURL https://cgadocs-hugo.apps.y.cld.gov.au/
