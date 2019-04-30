@@ -1,131 +1,99 @@
 version: 2
 jobs:
-    build-and-test-docs:
-        working_directory: ~/cga-docs
-        docker:
-            # Python 2 LTS as of 10/18
-            - image: circleci/python:2.7.15
-        steps:
-            - checkout
-            - run:
-                  name: Install dependencies
-                  # Default pip location is not on circleci's $PATH and cannot be easily added.
-                  # Use --user to build to ~/.local/bin
-                  command: pip install --user -r requirements.txt
-            - run:
-                  name: Install nodejs
-                  # Had a hard time persisting ~/.local/bin/mkdocs and others, quickest option was to
-                  # do in the one container :(
-                  command: |
-                          wget -qO- https://deb.nodesource.com/setup_8.x | sudo -E bash -
-                          sudo apt-get install -y nodejs
-            - run:
-                  name: Install pa11y
-                  command: make pa11y-install
-            - run:
-                  name: Install broken-links-install
-                  command: make broken-links-install
-            - run:
-                  name: Build mkdocs
-                  # Requires Python ~2.7
-                  command: ~/.local/bin/mkdocs build
-            - persist_to_workspace:
-                  root: ~/cga-docs
-                  paths:
-                      - site
-                      - manifest.yml
-    deploy-docs:
-        docker:
-            - image: govau/cf-cli
-        steps:
-            - attach_workspace:
-                  at: ~/cga-docs
-            - run:
-                  name: Deploy to cloud.gov.au
-                  command: |
-                      cd ~/cga-docs
-                      cf login -a $CF_API -o $CF_ORG -s $CF_SPACE -u $CF_USER -p $CF_PASSWORD
-                      cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
-    build-hugo:
-        working_directory: ~/cga-docs
-        docker:
-            - image: govau/cga-docs:hugo
-        steps:
-            - checkout
-            - restore_cache:
-                keys:
-                  - node-v2-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
-            - run:
-                  name: Build theme
-                  command: site/themes/designsystem.gov.au/build.sh
-            - save_cache:
-                paths:
-                  - site/themes/designsystem.gov.au/src/node_modules
-                key: node-v2-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
-            - run:
-                  name: Build site
-                  command: cd site && hugo --baseURL https://cgadocs-hugo.apps.y.cld.gov.au/
-            - persist_to_workspace:
-                  root: ~/cga-docs
-                  paths:
-                      - site/public
-                      - manifest-staging.yml
-    test-hugo:
+  build-ci:
+    working_directory: ~/cga-docs
+    docker:
+      - image: govau/cga-docs:hugo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v2-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
+      - run:
+          name: Build theme
+          command: site/themes/designsystem.gov.au/build.sh
+      - save_cache:
+          paths:
+            - site/themes/designsystem.gov.au/src/node_modules
+          key: node-v2-{{ .Branch }}-{{ checksum "site/themes/designsystem.gov.au/src/package-lock.json" }}
+      - run:
+          name: Build site
+          command: cd site && hugo --baseURL http://localhost
+      - persist_to_workspace:
+          root: ~/cga-docs
+          paths:
+            - .
+  create-ci-image:
+    machine: true
+    working_directory: ~/cga-docs
+    steps:
+      - attach_workspace:
+          at: ~/cga-docs
+      - run: |
+          docker build . -f .circleci/images/nginx.Dockerfile -t govau/cga-docs:ci-${CIRCLE_SHA1}
+          echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USER" --password-stdin
+          docker push govau/cga-docs:ci-${CIRCLE_SHA1}
+  test-ci:
+    working_directory: ~/cga-docs
+    docker:
+      - image: circleci/node:9.9.0
+      - image: govau/cga-docs:ci-${CIRCLE_SHA1}
+    steps:
+      - run: curl -i http://localhost
+      - run: npm install https://github.com/stevenvachon/broken-link-checker
+      - run:
+          name: Run broken link checker
+          command: |
+            node_modules/broken-link-checker/bin/blc \
+              --ordered \
+              --recursive \
+              --follow \
+              http://localhost
+
+  build-staging:
       working_directory: ~/cga-docs
       docker:
-        # - image: govau/cga-cli:latest
-        - image: nginx:1.15-alpine
+        - image: govau/cga-docs:hugo
       steps:
-        - run: apk update && apk add ca-certificates curl
         - attach_workspace:
             at: ~/cga-docs
-        - run: cp -rf site/public/* /usr/share/nginx/html
-        - run: curl -i http://localhost:80
-
-    deploy-hugo:
-        docker:
-            - image: govau/cf-cli
-        steps:
-            - attach_workspace:
-                  at: ~/cga-docs
-            - run:
-                  name: Deploy to staging cloud.gov.au
-                  command: |
-                      cd ~/cga-docs
-                      cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USER -p $CF_PASSWORD_STAGING
-                      cf zero-downtime-push cgadocs-hugo -f manifest-staging.yml
+        - run:
+            name: Build staging site
+            command: cd site && hugo --baseURL https://cgadocs-hugo.apps.y.cld.gov.au
+        - persist_to_workspace:
+            root: ~/cga-docs
+            paths:
+              - .
+  deploy-staging:
+      docker:
+        - image: govau/cf-cli
+      steps:
+        - attach_workspace:
+            at: ~/cga-docs
+        - run:
+            name: Deploy to staging cloud.gov.au
+            command: |
+              cd ~/cga-docs
+              cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USER -p $CF_PASSWORD_STAGING
+              cf zero-downtime-push cgadocs-hugo -f manifest-staging.yml
 workflows:
   version: 2
-  build-test-and-deploy:
+  do-it:
     jobs:
-      - build-and-test-docs:
-          filters:
-            branches:
-              ignore:
-                - hugo
-      - deploy-docs:
+      - build-ci
+      - create-ci-image:
           requires:
-            - build-and-test-docs
+            - build-ci
+      - test-ci:
+          requires:
+            - create-ci-image
+      - build-staging:
+          requires:
+            - test-ci
+      - deploy-staging:
+          requires:
+            - build-staging
           filters:
             branches:
               only:
-                - master
-  build-test-and-deploy-hugo:
-    jobs:
-      - build-hugo:
-          filters:
-            branches:
-              only:
-                - hugo
-      - test-hugo:
-          requires:
-            - build-hugo
-      - deploy-hugo:
-          # While working on hugo, deploy its branch to staging.
-          # This can be deleted when merged.
-          requires:
-            - test-hugo
-          filters:
-            branches:
-              only:
-                - hugo
+                - hugo # change to master when finished
