@@ -14,8 +14,3 @@ min_version = "0.38"
   name = "cloud.gov.au"
   homepage = "https://cloud.gov.au"
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
