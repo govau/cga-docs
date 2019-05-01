@@ -11,8 +11,10 @@
         <div class="row">
           <div class="col-md-12">
             <a class="au-header__brand" href="/">
+              {{ $image := resources.Get "img/header-logo-agov.png" }}
+
               <img class="au-header__brand-image" alt="The Australian Government coat of Arms"
-                src="{{ "images/header-logo-agov.png" | absURL }}">
+                src="{{ $image.RelPermalink }}">
               <div class="au-header__text">
                 <h1 class="au-header__heading">{{ .Title | default .Site.Title }}</h1>
                 <div class="au-header__subline">

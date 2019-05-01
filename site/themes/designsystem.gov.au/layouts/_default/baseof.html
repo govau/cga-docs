@@ -26,7 +26,8 @@
 	{{ else }}
 	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 	{{ end }}
-	<link rel="shortcut icon" href="/images/favicon.png?v=0">
+	{{ $favicon := resources.Get "img/favicon.png" }}
+	<link rel="shortcut icon" href="{{ $favicon.RelPermalink | absURL}} ">
 	<link href="{{ relURL ("dist/css/style.css") }}" rel="stylesheet">
 
 	{{ range .Site.Params.custom_css }}
