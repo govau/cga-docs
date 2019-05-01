@@ -28,7 +28,13 @@
 .PHONY:	all
 all:	latest
 
+clean:
+	rm -rf site/public
+	rm -rf site/themes/designsystem.gov.au/src/js/_pancake.min.js
+	rm -rf site/themes/designsystem.gov.au/src/sass/_pancake.scss
+	rm -rf site/themes/designsystem.gov.au/static
+
+
 .PHONY:	latest
 latest:	Dockerfile
 	docker build -t cga-docs:latest .
-
