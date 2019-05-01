@@ -1,6 +1,7 @@
 @import '_variables';
 @import '_pancake';
 @import '_sidebar';
+@import '_tier';
 
 main {
   @include AU-space( padding-bottom, 6unit );
@@ -16,8 +17,24 @@ main {
 	}
 }
 
-.visuallyhidden { 
+.visuallyhidden {
   @include AU-sronly();
+}
+
+.abstract {
+		position: relative;
+		// @include AU-fontgrid( xxxl, nospace );
+		// margin-top: 0;
+	// }
+
+	// .componentheader__body {
+		color: $AU-color-foreground-muted;
+		@include AU-space( margin-top, 2unit );
+		@include AU-space( margin-bottom, 2unit );
+		@include AU-fontgrid( lg );
+		@include AU-space( padding-bottom, 2unit );
+		border-bottom: 1px solid $AU-colordark-foreground-border;
+	// }
 }
 
 // User agent stylesheet override
