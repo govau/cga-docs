@@ -15,5 +15,8 @@ cd "$( dirname "${BASH_SOURCE[0]}" )/src"
 # install the packages
 npm install
 
+# run pancake
+node_modules/@gov.au/pancake/bin/pancake
+
 # build the theme
 npm run-script build
