@@ -44,7 +44,9 @@ jobs:
                   name: Deploy to cloud.gov.au
                   command: |
                       cd ~/cga-docs
-                      cf login -a $CF_API -o $CF_ORG -s $CF_SPACE -u $CF_USER -p $CF_PASSWORD
+                      cf api ${CF_API_PROD}
+                      cf auth ${CF_USERNAME} ${CF_PASSWORD_PROD}
+                      cf target -o ${CF_ORG} -s ${CF_SPACE}
                       cf zero-downtime-push cgadocs -f manifest.yml --show-app-log
 workflows:
     version: 2
