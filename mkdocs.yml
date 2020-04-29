@@ -13,7 +13,6 @@ extra:
   footer_links:
     - 'title': 'Status'
       'url': 'http://status.cloud.gov.au/'
-      'external': 'true'
 markdown_extensions:
   - toc:
 pages:
