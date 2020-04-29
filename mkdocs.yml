@@ -11,8 +11,6 @@ extra:
       'url': 'mailto:support@cloud.gov.au'
   search: true
   footer_links:
-    - 'title': 'Status'
-      'url': 'http://status.cloud.gov.au/'
 markdown_extensions:
   - toc:
 pages:
