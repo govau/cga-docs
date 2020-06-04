@@ -55,3 +55,10 @@ Make sure you have the app running locally with:
 Run the test with:
 
 `make pa11y-test`
+
+## Modifying UI theme, css, pages and other front end elements
+
+* The theme that this site is using is set from this repo - https://github.com/AusDTO/mkdocs-gov-au-theme
+* Theme files are located in this folder - https://github.com/AusDTO/mkdocs-gov-au-theme/tree/master/gov_au_theme
+* However it is easier to update UI by modifying files in theme_overrides in this repo
+* The files in theme_overrides will need to match the structure in https://github.com/AusDTO/mkdocs-gov-au-theme/tree/master/gov_au_theme
