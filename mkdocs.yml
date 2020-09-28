@@ -35,7 +35,7 @@ pages:
     - 'Log access': 'services/log_access.md'
   - Support:
     - 'Get help using cloud.gov.au': 'support/help.md'
-    - 'Reset CloudFoundry password': 'support/reset_password.md'
+    - 'Reset cloud.gov.au password': 'support/reset_password.md'
     - 'Incident response': 'support/incident_response.md'
     - 'Post Incident Reports': 'support/incident_reports.md'
     - '_2016-08-12': 'support/incident_reports/2016-08-12.md'
