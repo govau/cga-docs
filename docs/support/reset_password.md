@@ -1,6 +1,10 @@
 abstract: What to do if you’ve forgotten your password or need to change it.
 
-## How to change your password
+## What to do if you’ve forgotten your cloud.gov.au password
+
+Please send a support ticket to [support@cloud.gov.au](mailto:support@cloud.gov.au).
+
+## How to change your cf password
 
 Change your password with:
 
@@ -25,7 +29,3 @@ Verify Password>*******
 Changing password...
 
 ```
-
-## What to do if you’ve forgotten your password
-
-Please send a support ticket to [support@cloud.gov.au](mailto:support@cloud.gov.au).
