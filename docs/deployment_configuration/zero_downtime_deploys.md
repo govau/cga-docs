@@ -36,6 +36,8 @@ This will:
 Then it will do the same thing for `app-name-green`. This ensures the user
 never experiences any downtime.
 
+Note: If your application is being built by CircleCI (e.g. via a bash script) ensure that you're running `cf push` without any parameters, so that it will use the app names supplied in the manifest.
+
 ## Using a database
 
 If your application requires a database, you will usually use the same database for the
